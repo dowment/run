@@ -1,0 +1,44 @@
+name: Collect
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron:  '0 0/8 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git config
+      run: git config --local user.name "GitHub Actions"; git config --local user.email "actions@github.com"
+    
+    - name: Checkout private repository
+      uses: actions/checkout@v3
+      with:
+        repository: donnanszex7654/pwc
+        token: ${{ secrets.privates }}
+        path: pwc
+
+    - name: Run test
+      run: |
+        cd pwc/utils/cn
+        # python test.py
+
+    - name: Commit and push to pwc repository
+      run: |
+        cd pwc
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        if [[ `git status --porcelain` ]]; then
+          git pull origin main
+          git merge main
+          git add .
+          git commit -m "$(date '+%Y.%m.%d %H:%M:%S') update"
+          git push origin main
+        else
+          echo "No changes to commit"
+        fi

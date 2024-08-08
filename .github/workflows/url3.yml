@@ -1,0 +1,73 @@
+name: Test
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron:  '0 0/7 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: git config
+      run: git config --local user.name "GitHub Actions"; git config --local user.email "actions@github.com"
+    
+    - name: Checkout private repository
+      uses: actions/checkout@v3
+      with:
+        repository: donnanszex7654/pwc
+        token: ${{ secrets.privates }}
+        path: pwc
+
+    - name: Change directory and run pipeline_c.py
+      run: |
+        cd pwc
+        # python pipeline_c.py
+
+    - name: Checkout this repository
+      uses: actions/checkout@v3
+      with:
+        repository: donnanszex7654/action
+        token: ${{ secrets.privates }}
+        path: actions
+
+    - name: Copy Clash.yml
+      run: |
+        pwd
+        cd actions && pwd
+        cp ../pwc/base64.txt ./base64.yml
+
+    # - name: Remove pwc directory
+    #   run: rm -rf pwc
+
+    - name: Commit and push
+      run: |
+        pwd
+        cd actions
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        git pull origin main
+        git merge main
+        git add .
+        git commit -m "$(date '+%Y.%m.%d %H:%M:%S') update"
+        git push origin main
+
+    - name: Commit and push to pwc repository
+      run: |
+        cd pwc
+        git config --local user.name "GitHub Actions"
+        git config --local user.email "actions@github.com"
+        if [[ `git status --porcelain` ]]; then
+          git pull origin main
+          git merge main
+          git add .
+          git commit -m "$(date '+%Y.%m.%d %H:%M:%S') update"
+          git push origin main
+        else
+          echo "No changes to commit"
+        fi
+
