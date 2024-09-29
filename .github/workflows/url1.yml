@@ -7,17 +7,17 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
     - name: Timezone
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: git config
       run: git config --local user.name "GitHub Actions"; git config --local user.email "actions@github.com"
     
     - name: Checkout private repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: dowment/pwcd
         token: ${{ secrets.privates }}
@@ -29,7 +29,7 @@ jobs:
         python pipeline.py
 
     - name: Checkout this repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       with:
         repository: dowment/run
         token: ${{ secrets.privates }}
