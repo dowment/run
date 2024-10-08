@@ -108,9 +108,49 @@
         },
         {
             "type": "vless",
-            "tag": "SI-1",
-            "server": "92.53.190.161",
-            "server_port": 2087,
+            "tag": "LT-1",
+            "server": "89.116.250.6",
+            "server_port": 2083,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "transport": {
+                "path": "/fp",
+                "type": "ws",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "juzibaipiao.5112233.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "trojan",
+            "tag": "SC-1",
+            "server": "154.197.121.253",
+            "server_port": 443,
+            "password": "moist",
+            "transport": {
+                "type": "ws",
+                "path": "/?ed=2560",
+                "headers": {
+                    "Host": "trojan.freenods.sbs"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.freenods.sbs",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "SC-2",
+            "server": "154.197.64.166",
+            "server_port": 2053,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
                 "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
@@ -127,25 +167,48 @@
             "tcp_fast_open": false
         },
         {
-            "type": "hysteria2",
-            "tag": "Un-1",
-            "server": "45.76.0.86",
-            "server_port": 443,
-            "password": "1f17cdf0578a2860",
+            "type": "vless",
+            "tag": "SC-3",
+            "server": "154.197.64.240",
+            "server_port": 8443,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
             "tls": {
                 "enabled": true,
-                "server_name": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "server_name": "freenodes.repe.gay",
                 "insecure": true
             },
-            "obfs": {
-                "type": "salamander",
-                "password": "4b817757"
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "SE-1",
+            "server": "13.49.186.14",
+            "server_port": 22222,
+            "uuid": "05519058-d2ac-4f28-9e4a-2b2a1386749e",
+            "transport": {
+                "path": "/telegram-channel-vlessconfig-ws",
+                "type": "ws",
+                "headers": {
+                    "Host": "telegram-channel-vlessconfig.sohala.uk"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "telegram-channel-vlessconfig.sohala.uk",
+                "insecure": true
             },
             "tcp_fast_open": false
         },
         {
             "type": "hysteria2",
-            "tag": "Un-2",
+            "tag": "Un-1",
             "server": "45.76.0.86",
             "server_port": 443,
             "password": "1f17cdf0578a2860",
@@ -162,6 +225,23 @@
         },
         {
             "type": "hysteria2",
+            "tag": "Un-2",
+            "server": "66.135.11.68",
+            "server_port": 443,
+            "password": "4e9ee29b39a28277",
+            "tls": {
+                "enabled": true,
+                "server_name": "66.135.11.68",
+                "insecure": true
+            },
+            "obfs": {
+                "type": "salamander",
+                "password": "13f7ba5f"
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
             "tag": "Un-3",
             "server": "108.181.24.39",
             "server_port": 60714,
@@ -169,46 +249,6 @@
             "tls": {
                 "enabled": true,
                 "server_name": "www.bing.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "ZA-1",
-            "server": "160.123.255.134",
-            "server_port": 443,
-            "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
-            "transport": {
-                "path": "/bluehttps://vless.fxxk.dedyn.io/sub?host",
-                "type": "ws",
-                "headers": {
-                    "Host": "ag.ylks.xyz"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ag.ylks.xyz",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "ZA-2",
-            "server": "160.123.255.251",
-            "server_port": 443,
-            "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
-            "transport": {
-                "path": "/blue",
-                "type": "ws",
-                "headers": {
-                    "Host": "ag.ylks.xyz"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ag.ylks.xyz",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -239,13 +279,21 @@
             "tcp_fast_open": false
         },
         {
-            "type": "hysteria2",
-            "tag": "🇨🇦 CA-3",
-            "server": "bgp.xn--jbyq16e.xyz",
-            "server_port": 41161,
-            "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
+            "type": "vless",
+            "tag": "🇨🇳 CN-1",
+            "server": "106.75.178.154",
+            "server_port": 8969,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "/?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
             "tls": {
                 "enabled": true,
+                "server_name": "freenodes.repe.gay",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -264,50 +312,10 @@
             "tcp_fast_open": false
         },
         {
-            "type": "trojan",
-            "tag": "🇨🇳 TW-2",
-            "server": "35.201.203.106",
-            "server_port": 443,
-            "password": "auto",
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "vip.123789.pp.ua"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vip.123789.pp.ua",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
             "type": "vless",
             "tag": "🇩🇪 DE-1",
-            "server": "140.99.233.156",
+            "server": "185.135.9.105",
             "server_port": 2087,
-            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
-            "transport": {
-                "path": "/?ed=2048",
-                "type": "ws",
-                "headers": {
-                    "Host": "juzibaipiao.5112233.xyz"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "juzibaipiao.5112233.xyz",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇩🇪 DE-2",
-            "server": "185.135.9.155",
-            "server_port": 443,
             "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
                 "path": "/RZNUeKfQI5UNvHQ2/MTI5LjE1OS4yNDEuMTcy",
@@ -325,15 +333,15 @@
         },
         {
             "type": "vmess",
-            "tag": "🇩🇪 DE-3",
-            "server": "91.107.164.204",
+            "tag": "🇬🇧 GB-1",
+            "server": "149.7.16.172",
             "server_port": 443,
-            "uuid": "57727d7d-8873-4000-b3f4-33a93fcfdd51",
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "alter_id": 0,
             "security": "auto",
             "transport": {
                 "type": "ws",
-                "path": "/m28jcoZZUhkqg6pk11",
+                "path": "/linkvws",
                 "headers": {}
             },
             "tls": {
@@ -344,74 +352,127 @@
             "tcp_fast_open": false
         },
         {
-            "type": "vless",
-            "tag": "🇬🇧 GB-1",
-            "server": "217.163.76.107",
-            "server_port": 2053,
-            "uuid": "678ac895-92c2-4f27-a9d4-f1a89c5f5365",
-            "transport": {
-                "path": "twitterfreecodesfp",
-                "type": "ws",
-                "headers": {
-                    "Host": "mositr.freenods.sbs"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mositr.freenods.sbs",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
+            "type": "hysteria2",
             "tag": "🇭🇰 HK-1",
-            "server": "154.211.8.220",
-            "server_port": 2096,
-            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
-            "transport": {
-                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
-                "type": "ws",
-                "headers": {
-                    "Host": "freenodes.repe.gay"
-                }
-            },
+            "server": "hk5.fastsocks.xyz",
+            "server_port": 34000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
             "tls": {
                 "enabled": true,
-                "server_name": "freenodes.repe.gay",
+                "server_name": "hk1.fastsocks.xyz",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
-            "type": "vless",
+            "type": "hysteria2",
             "tag": "🇭🇰 HK-2",
-            "server": "112.119.49.206",
-            "server_port": 23555,
-            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
-            "transport": {
-                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
-                "type": "ws",
-                "headers": {
-                    "Host": "freenodes.repe.gay"
-                }
-            },
+            "server": "hk3.fastsocks.xyz",
+            "server_port": 34000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
             "tls": {
                 "enabled": true,
-                "server_name": "freenodes.repe.gay",
+                "server_name": "hk1.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇭🇰 HK-3",
+            "server": "hk2.fastsocks.xyz",
+            "server_port": 34000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk1.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇭🇰 HK-4",
+            "server": "hk4.fastsocks.xyz",
+            "server_port": 34000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk1.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇭🇰 HK-5",
+            "server": "hk8.fastsocks.xyz",
+            "server_port": 34000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk1.fastsocks.xyz",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
             "type": "trojan",
-            "tag": "🇭🇰 HK-3",
-            "server": "6d51caa399c00999ceabd1c3c6fa0171.v1.cac.node-is.green",
-            "server_port": 42663,
-            "password": "7bd8bd80-0be5-4299-8a2c-8fafd4c247df",
+            "tag": "🇭🇰 HK-6",
+            "server": "claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma",
+            "server_port": 443,
+            "password": "a3ca0380-8a17-403a-a5b3-a9f6e59be193",
+            "transport": {
+                "type": "ws",
+                "path": "/a3ca0380-8a17-403a-a5b3-a9f6e59be193",
+                "headers": {
+                    "Host": "claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma"
+                }
+            },
             "tls": {
                 "enabled": true,
-                "server_name": "hk12.speedtest.net",
+                "server_name": "claw-ali-hkg-1ge.china-next-generation-any-path-smart-route-global.2h.ma",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vmess",
+            "tag": "🇭🇰 HK-7",
+            "server": "19.lwdh.us",
+            "server_port": 12909,
+            "uuid": "a32313ad-5e39-4f9a-9cad-512041790050",
+            "alter_id": 0,
+            "security": "auto",
+            "transport": {
+                "type": "ws",
+                "path": "/",
+                "headers": {
+                    "Host": "19.lwdh.us"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇭🇰 HK-8",
+            "server": "43.155.71.120",
+            "server_port": 444,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "Telegram🇨🇳 @WangCai_8 /?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "freenodes.repe.gay",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -441,8 +502,41 @@
             "tcp_fast_open": false
         },
         {
-            "type": "hysteria2",
+            "type": "vless",
             "tag": "🇯🇵 JP-1",
+            "server": "154.92.9.5",
+            "server_port": 443,
+            "uuid": "ae1fcb59-83a0-41e0-ac68-f201ff14d966",
+            "transport": {
+                "path": "/?ed",
+                "type": "ws",
+                "headers": {
+                    "Host": "xiaoer.us.kg"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "xiaoer.us.kg",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇯🇵 JP-2",
+            "server": "jp2.fastsocks.xyz",
+            "server_port": 57000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk1.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇯🇵 JP-3",
             "server": "18.179.58.237",
             "server_port": 3074,
             "password": "NTIxMTMzOjE3ODEzNzphNWY1MDNlN2M1YmRlOTVi",
@@ -455,45 +549,12 @@
         },
         {
             "type": "hysteria2",
-            "tag": "🇯🇵 JP-2",
+            "tag": "🇯🇵 JP-4",
             "server": "bgp.xn--jbyq16e.xyz",
             "server_port": 41158,
             "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
             "tls": {
                 "enabled": true,
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇯🇵 JP-3",
-            "server": "140.238.56.153",
-            "server_port": 1443,
-            "password": "moist",
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "trojan.freenods.sbs"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.freenods.sbs",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "hysteria2",
-            "tag": "🇯🇵 JP-4",
-            "server": "35.72.184.29",
-            "server_port": 3074,
-            "password": "NTIxMTMzOjE3ODEzNzphNWY1MDNlN2M1YmRlOTVi",
-            "tls": {
-                "enabled": true,
-                "server_name": "TG.%40WangCai2",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -512,11 +573,24 @@
             "tcp_fast_open": false
         },
         {
+            "type": "hysteria2",
+            "tag": "🇯🇵 JP-6",
+            "server": "35.72.184.29",
+            "server_port": 3074,
+            "password": "NTIxMTMzOjE3ODEzNzphNWY1MDNlN2M1YmRlOTVi",
+            "tls": {
+                "enabled": true,
+                "server_name": "TG.%40WangCai2",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
             "type": "trojan",
             "tag": "🇰🇷 KR-1",
             "server": "cn2.cdn.xfltd-cdn.top",
             "server_port": 12025,
-            "password": "c5971db7-a8ee-4c44-9408-4c8950d19e0b",
+            "password": "af46f520-a6a1-4207-b3c4-062493fb71d1",
             "tls": {
                 "enabled": true,
                 "server_name": "cdn.alibaba.com",
@@ -527,8 +601,8 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-10",
-            "server": "219.249.144.205",
-            "server_port": 10001,
+            "server": "112.121.210.157",
+            "server_port": 16002,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
                 "path": "Telegram🇨🇳 @WangCai_8 /?ed=2048",
@@ -545,13 +619,21 @@
             "tcp_fast_open": false
         },
         {
-            "type": "hysteria2",
+            "type": "vless",
             "tag": "🇰🇷 KR-2",
-            "server": "bgp.xn--jbyq16e.xyz",
-            "server_port": 41155,
-            "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
+            "server": "1.252.14.205",
+            "server_port": 33890,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
             "tls": {
                 "enabled": true,
+                "server_name": "freenodes.repe.gay",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -559,11 +641,11 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-3",
-            "server": "121.182.55.77",
-            "server_port": 30063,
+            "server": "59.29.116.20",
+            "server_port": 11965,
             "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
             "transport": {
-                "path": "/?ed=2560",
+                "path": "/",
                 "type": "ws",
                 "headers": {
                     "Host": "global2.ccdd.site"
@@ -579,8 +661,8 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-4",
-            "server": "110.15.107.178",
-            "server_port": 10001,
+            "server": "14.53.130.71",
+            "server_port": 50003,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
                 "path": "Telegram🇨🇳  /?ed=2048",
@@ -599,8 +681,8 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-5",
-            "server": "121.179.59.233",
-            "server_port": 10443,
+            "server": "27.35.216.100",
+            "server_port": 11443,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
                 "path": "Telegram🇨🇳  /?ed=2048",
@@ -619,11 +701,11 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-6",
-            "server": "211.196.12.95",
-            "server_port": 12527,
+            "server": "183.96.128.151",
+            "server_port": 10086,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
-                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
+                "path": "Telegram🇨🇳 @WangCai_8 /?ed=2048",
                 "type": "ws",
                 "headers": {
                     "Host": "freenodes.repe.gay"
@@ -639,11 +721,11 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-7",
-            "server": "211.108.194.141",
+            "server": "222.116.131.38",
             "server_port": 50003,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
-                "path": "Telegram🇨🇳  /?ed=2048",
+                "path": "Telegram🇨🇳 @WangCai_8 /?ed=2048",
                 "type": "ws",
                 "headers": {
                     "Host": "freenodes.repe.gay"
@@ -659,11 +741,11 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-8",
-            "server": "121.139.174.91",
-            "server_port": 50003,
+            "server": "14.45.213.201",
+            "server_port": 50001,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
-                "path": "Telegram🇨🇳  /?ed=2048",
+                "path": "Telegram🇨🇳 @WangCai_8 /?ed=2048",
                 "type": "ws",
                 "headers": {
                     "Host": "freenodes.repe.gay"
@@ -679,8 +761,8 @@
         {
             "type": "vless",
             "tag": "🇰🇷 KR-9",
-            "server": "121.179.212.16",
-            "server_port": 10081,
+            "server": "125.136.51.42",
+            "server_port": 28017,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
                 "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
@@ -711,19 +793,19 @@
         {
             "type": "vless",
             "tag": "🇷🇺 RU-1",
-            "server": "185.59.218.0",
+            "server": "188.42.145.140",
             "server_port": 443,
-            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
+            "uuid": "f3fcb0be-c785-4791-bd88-335dd20f0c1e",
             "transport": {
-                "path": "tg@zdyz2",
+                "path": "/?proxyip=proxyip.multacom.fxxk.dedyn.iofp=chrome",
                 "type": "ws",
                 "headers": {
-                    "Host": "cfed.tgzdyz2.top"
+                    "Host": "g1.youyuan.us.kg"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "cfed.tgzdyz2.top",
+                "server_name": "g1.youyuan.us.kg",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -731,7 +813,186 @@
         {
             "type": "vless",
             "tag": "🇷🇺 RU-2",
-            "server": "5.182.84.120",
+            "server": "31.129.49.103",
+            "server_port": 443,
+            "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+            "transport": {
+                "path": "/?ed",
+                "type": "ws",
+                "headers": {
+                    "Host": "lf.ylks.us.kg"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lf.ylks.us.kg",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇷🇺 RU-3",
+            "server": "185.176.24.140",
+            "server_port": 2087,
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
+            "transport": {
+                "path": "/?ed=2048security=tls",
+                "type": "ws",
+                "headers": {
+                    "Host": "juzibaipiao.5112233.xyz"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "juzibaipiao.5112233.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇷🇺 RU-4",
+            "server": "ru.fastsocks.xyz",
+            "server_port": 57000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk5.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇷🇺 RU-5",
+            "server": "ru-01.jisovpn.site",
+            "server_port": 8088,
+            "password": "c596e12d-85e2-40b2-afce-475e1813df07",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇷🇺 RU-6",
+            "server": "176.124.223.133",
+            "server_port": 2096,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "freenodes.repe.gay",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇸🇬 SG-1",
+            "server": "206.238.237.88",
+            "server_port": 443,
+            "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
+            "transport": {
+                "path": "/?proxyip",
+                "type": "ws",
+                "headers": {
+                    "Host": "dg.ylks.xyz"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dg.ylks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇸🇬 SG-2",
+            "server": "194.36.179.226",
+            "server_port": 57000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk1.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vmess",
+            "tag": "🇸🇬 SG-3",
+            "server": "xjpx6.12123.org",
+            "server_port": 30003,
+            "uuid": "778687de-4068-4ae3-bda2-298e1da0fee6",
+            "alter_id": 0,
+            "security": "auto",
+            "transport": {
+                "type": "ws",
+                "path": "/12123.org",
+                "headers": {
+                    "Host": "www.baidu.com"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇸🇬 SG-4",
+            "server": "92.243.74.239",
+            "server_port": 8443,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "freenodes.repe.gay",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇸🇬 SG-5",
+            "server": "27.50.49.37",
+            "server_port": 2053,
+            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "transport": {
+                "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "freenodes.repe.gay"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "freenodes.repe.gay",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🇸🇬 SG-6",
+            "server": "92.243.74.115",
             "server_port": 443,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
@@ -751,19 +1012,19 @@
         {
             "type": "vless",
             "tag": "🇺🇸 US-1",
-            "server": "103.116.7.220",
+            "server": "108.165.216.65",
             "server_port": 2096,
-            "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/?ed=2048",
+                "path": "/mXArRdtPyiecaJ03?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "freenodes.repe.gay"
+                    "Host": "403b3611-99BC-43b7-88D7-26ED5D0825a9-3.PageS.DEv"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "freenodes.repe.gay",
+                "server_name": "403b3611-99BC-43b7-88D7-26ED5D0825a9-3.PageS.DEv",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -771,224 +1032,8 @@
         {
             "type": "vless",
             "tag": "🇺🇸 US-10",
-            "server": "US-Ashburn-Oracle.cfip.top",
-            "server_port": 21352,
-            "uuid": "a894f06a-0d0e-4053-9b54-809287cbcb13",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "server_name": "www.python.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "nyCguCLH775mUG3p_6K23b9l-eTCFHxVZveXZQ_UHGc",
-                    "short_id": "5bebe867"
-                }
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-11",
-            "server": "www.speedtest.net",
+            "server": "209.208.227.79",
             "server_port": 443,
-            "uuid": "ebb407b7-3c24-5957-93f9-e7122d08c0ef",
-            "transport": {
-                "type": "grpc",
-                "service_name": "vless-grpc"
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "us2.vless.site",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "hysteria2",
-            "tag": "🇺🇸 US-12",
-            "server": "bgp.xn--jbyq16e.xyz",
-            "server_port": 41118,
-            "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "hysteria2",
-            "tag": "🇺🇸 US-13",
-            "server": "bgp.xn--jbyq16e.xyz",
-            "server_port": 41116,
-            "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "hysteria2",
-            "tag": "🇺🇸 US-14",
-            "server": "bgp.xn--jbyq16e.xyz",
-            "server_port": 41151,
-            "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
-            "tls": {
-                "enabled": true,
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇺🇸 US-15",
-            "server": "23.150.248.153",
-            "server_port": 443,
-            "password": "669d0ac7b5b64ebbb1abb75d5d540a5c",
-            "transport": {
-                "type": "ws",
-                "path": "/6b777a91",
-                "headers": {
-                    "Host": "jobscareerforstudent.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jobscareerforstudent.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇺🇸 US-16",
-            "server": "23.150.248.153",
-            "server_port": 443,
-            "password": "dba20dcb635e430fa4d3bfc303a149d2",
-            "transport": {
-                "type": "ws",
-                "path": "/6b777a91",
-                "headers": {
-                    "Host": "jobscareerforstudent.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jobscareerforstudent.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇺🇸 US-17",
-            "server": "23.150.248.54",
-            "server_port": 443,
-            "password": "f0eb8c92ce8946aaba856569cff1a16b",
-            "transport": {
-                "type": "ws",
-                "path": "6b777a91",
-                "headers": {
-                    "Host": "jobscareerforlawyers.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jobscareerforlawyers.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇺🇸 US-18",
-            "server": "23.150.248.54",
-            "server_port": 443,
-            "password": "4732adfa16c6450bbef87264e41332db",
-            "transport": {
-                "type": "ws",
-                "path": "6b777a91",
-                "headers": {
-                    "Host": "jobscareerforlawyers.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jobscareerforlawyers.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇺🇸 US-19",
-            "server": "23.150.248.54",
-            "server_port": 443,
-            "password": "242a3d8eee5e4ed1a6bfa4141d549a25",
-            "transport": {
-                "type": "ws",
-                "path": "6b777a91",
-                "headers": {
-                    "Host": "jobscareerforlawyers.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jobscareerforlawyers.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-2",
-            "server": "155.46.213.9",
-            "server_port": 443,
-            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
-            "transport": {
-                "path": "/tg@zdyz2fp",
-                "type": "ws",
-                "headers": {
-                    "Host": "cfed.tgzdyz2.top"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cfed.tgzdyz2.top",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🇺🇸 US-20",
-            "server": "23.150.248.107",
-            "server_port": 443,
-            "password": "4732adfa16c6450bbef87264e41332db",
-            "transport": {
-                "type": "ws",
-                "path": "6b777a91",
-                "headers": {
-                    "Host": "jobscareertoday.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "jobscareertoday.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-21",
-            "server": "154.17.17.205",
-            "server_port": 11349,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
                 "path": "Telegram🇨🇳 @WangCai2 /?ed=2048",
@@ -1006,8 +1051,8 @@
         },
         {
             "type": "vless",
-            "tag": "🇺🇸 US-22",
-            "server": "108.165.152.18",
+            "tag": "🇺🇸 US-11",
+            "server": "104.36.195.231",
             "server_port": 2087,
             "uuid": "ca8692b7-8f6f-4346-a916-c1e9798ab91b",
             "transport": {
@@ -1025,164 +1070,152 @@
             "tcp_fast_open": false
         },
         {
-            "type": "trojan",
-            "tag": "🇺🇸 US-3",
-            "server": "199.181.197.143",
-            "server_port": 443,
-            "password": "bpb-trojan",
-            "transport": {
-                "type": "ws",
-                "path": "/trAun92tJzhYilmLtq?ed=2560",
-                "headers": {
-                    "Host": "403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
             "type": "vless",
-            "tag": "🇺🇸 US-4",
-            "server": "69.84.182.38",
+            "tag": "🇺🇸 US-2",
+            "server": "198.62.62.137",
             "server_port": 443,
             "uuid": "a13df940-020c-465f-bc89-ee5279b5cd6a",
             "transport": {
-                "path": "/blue",
+                "path": "/?ed",
                 "type": "ws",
                 "headers": {
-                    "Host": "lg.ylks01.eu.org"
+                    "Host": "lg.ylks.us.kg"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "lg.ylks01.eu.org",
+                "server_name": "lg.ylks.us.kg",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
             "type": "vless",
-            "tag": "🇺🇸 US-5",
-            "server": "69.84.182.176",
+            "tag": "🇺🇸 US-3",
+            "server": "104.254.140.155",
             "server_port": 443,
-            "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
+            "uuid": "f775978b-6e22-41a8-ae5e-5f9779e6745f",
             "transport": {
-                "path": "/?proxyip",
+                "path": "/",
                 "type": "ws",
                 "headers": {
-                    "Host": "ae.ylks.xyz"
+                    "Host": "juzibaipiao.5112233.xyz"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "ae.ylks.xyz",
+                "server_name": "juzibaipiao.5112233.xyz",
                 "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-6",
-            "server": "199.34.228.184",
-            "server_port": 443,
-            "uuid": "1b3b276f-44b4-4c39-bfdf-67ff6337b41f",
-            "transport": {
-                "path": "/TELEGRAM-MARAMBASHI/?ed",
-                "type": "ws",
-                "headers": {
-                    "Host": "POOrIaREd--persEPolIS.pAGEs.Dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "POOrIaREd--persEPolIS.pAGEs.Dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-7",
-            "server": "160.79.105.4",
-            "server_port": 443,
-            "uuid": "48198295-b7ba-4b5c-8d85-085d55a6c869",
-            "transport": {
-                "path": "/bluehttps://vless.fxxk.dedyn.io/sub?host",
-                "type": "ws",
-                "headers": {
-                    "Host": "ag.ylks.xyz"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ag.ylks.xyz",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-8",
-            "server": "216.116.134.16",
-            "server_port": 443,
-            "uuid": "2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5",
-            "transport": {
-                "path": "tg@zdyz2",
-                "type": "ws",
-                "headers": {
-                    "Host": "cfed.tgzdyz2.top"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cfed.tgzdyz2.top",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🇺🇸 US-9",
-            "server": "74.48.93.41",
-            "server_port": 62001,
-            "uuid": "d788dcdc-d46e-47ed-f362-4a08bceb4369",
-            "flow": "xtls-rprx-vision",
-            "tls": {
-                "enabled": true,
-                "server_name": "swdist.apple.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM",
-                    "short_id": ""
-                }
             },
             "tcp_fast_open": false
         },
         {
             "type": "trojan",
-            "tag": "🌏 CF-1",
-            "server": "172.64.153.235",
-            "server_port": 2053,
-            "password": "bpb-trojan",
+            "tag": "🇺🇸 US-4",
+            "server": "208.87.243.139",
+            "server_port": 443,
+            "password": "f2191442-1436-3d79-801e-80d8de896c73",
             "transport": {
                 "type": "ws",
-                "path": "/trEjWhhuRjwiMwSbDN/ZGUucmFkaWNhbGx5LnBybw==",
+                "path": "/91838f3b905c42c7aa5b664b27d8193b",
                 "headers": {
-                    "Host": "bpB-worKER-paneL1-e4p.pAGes.dEV"
+                    "Host": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "bpB-worKER-paneL1-e4p.pAGes.dEV",
+                "server_name": "wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇺🇸 US-5",
+            "server": "us2.fastsocks.xyz",
+            "server_port": 57000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk5.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇺🇸 US-6",
+            "server": "us1.fastsocks.xyz",
+            "server_port": 57000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk5.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇺🇸 US-7",
+            "server": "us3.fastsocks.xyz",
+            "server_port": 57000,
+            "password": "e9f273dd-467b-485a-8ff6-9f8ae9566df5",
+            "tls": {
+                "enabled": true,
+                "server_name": "hk5.fastsocks.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "hysteria2",
+            "tag": "🇺🇸 US-8",
+            "server": "bgp.xn--jbyq16e.xyz",
+            "server_port": 41116,
+            "password": "cbd41a4c-c287-4b51-8898-37040ac4cc68",
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "trojan",
+            "tag": "🇺🇸 US-9",
+            "server": "23.150.248.50",
+            "server_port": 443,
+            "password": "669d0ac7b5b64ebbb1abb75d5d540a5c",
+            "transport": {
+                "type": "ws",
+                "path": "/6b777a91",
+                "headers": {
+                    "Host": "jobscareerfortoday.com"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jobscareerfortoday.com",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🌏 CF-1",
+            "server": "172.66.47.106",
+            "server_port": 443,
+            "uuid": "bf7e1009-1574-44f7-86df-6cbecd338477",
+            "transport": {
+                "path": "/?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "pardazeshvpn-tg18.pages.dev"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pardazeshvpn-tg18.pages.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1190,19 +1223,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-10",
-            "server": "104.21.25.228",
+            "server": "172.66.44.75",
             "server_port": 443,
-            "uuid": "f06ac303-e626-451d-bcfc-ee825ee69398",
+            "uuid": "c2c8a201-09b9-47a7-b336-fcf1657f54a8",
             "transport": {
-                "path": "/Tel-@V2ray_Alpha/?ed=2048",
+                "path": "/Telegram@Azarakhsh_Proxy/?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "AzADnet-semEj.PAGes.dEv"
+                    "Host": "bpb-wORKer-paNeL-3JC.pAgeS.DeV"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "AzADnet-semEj.PAGes.dEv",
+                "server_name": "bpb-wORKer-paNeL-3JC.pAgeS.DeV",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1210,19 +1243,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-11",
-            "server": "104.18.15.19",
+            "server": "172.66.47.191",
             "server_port": 443,
-            "uuid": "1b3b276f-44b4-4c39-bfdf-67ff6337b41f",
+            "uuid": "b1634f7c-a569-4587-adb0-e1ed8cf27966",
             "transport": {
-                "path": "/TELEGRAM-MARAMBASHI/?ed=2560",
+                "path": "/?ed=2048",
                 "type": "ws",
                 "headers": {
-                    "Host": "POOrIaREd--persEPolIS.pAGEs.Dev"
+                    "Host": "rmgy.pages.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "POOrIaREd--persEPolIS.pAGEs.Dev",
+                "server_name": "rmgy.pages.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1230,19 +1263,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-12",
-            "server": "104.21.7.4",
+            "server": "172.67.204.84",
             "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "uuid": "3fedbd26-b4da-440e-9f7c-004d2463caec",
             "transport": {
-                "path": "/fY2YVghPfKWjXYoe?ed=2560",
+                "path": "/---------DisVpn---------DisVpn---------DisVpn",
                 "type": "ws",
                 "headers": {
-                    "Host": "pPAL03.kiaNah-mckynLEIgH.woRKERS.dEv"
+                    "Host": "DisVpn.us.kg"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "pPAL03.kiaNah-mckynLEIgH.woRKERS.dEv",
+                "server_name": "DisVpn.us.kg",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1250,19 +1283,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-13",
-            "server": "172.66.45.31",
-            "server_port": 8443,
-            "uuid": "1de40725-3e6b-42b1-9e3e-330c852d049e",
+            "server": "104.27.207.92",
+            "server_port": 443,
+            "uuid": "f06ac303-e626-451d-bcfc-ee825ee69398",
             "transport": {
-                "path": "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048",
+                "path": "/iLBB4pavFZGckVIC?ed=2048",
                 "type": "ws",
                 "headers": {
-                    "Host": "pardazeshvpn-tg56.pages.dev"
+                    "Host": "AzAdnET-SemeJ.pAGES.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "pardazeshvpn-tg56.pages.dev",
+                "server_name": "AzAdnET-SemeJ.pAGES.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1270,19 +1303,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-14",
-            "server": "104.18.32.47",
+            "server": "bpb-worker-panel1-e4p.pages.dev",
             "server_port": 443,
-            "uuid": "0f908c6e-61bf-447d-82f5-0e8938bd4efc",
+            "uuid": "4045e84e-5e3c-4f70-8ff5-c1097882a55a",
             "transport": {
-                "path": "/V2LINE-TELEGRAM-CHANNEL-VLESS-WS-TLS",
+                "path": "/n9ITDVHC41L24ceq/ZGUucmFkaWNhbGx5LnBybw==",
                 "type": "ws",
                 "headers": {
-                    "Host": "39238319310964543920519489701900.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou"
+                    "Host": "bpb-wOrkeR-PANEl1-E4P.PaGeS.Dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "39238319310964543920519489701900.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou",
+                "server_name": "bpb-wOrkeR-PANEl1-E4P.PaGeS.Dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1290,19 +1323,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-15",
-            "server": "104.24.0.2",
-            "server_port": 2096,
+            "server": "creativecommons.org",
+            "server_port": 2053,
             "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/sIMVZqgxupW4nHq2?ed=2560",
+                "path": "/zvk78A3RrwtbmvAX/MTI5LjE1OS4yNDEuMTcy",
                 "type": "ws",
                 "headers": {
-                    "Host": "403b3611-99bc-43b7-88D7-26ed5d0825A9-3.pAges.deV"
+                    "Host": "bpb-v.PAGEs.deV"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "403b3611-99bc-43b7-88D7-26ed5d0825A9-3.pAges.deV",
+                "server_name": "bpb-v.PAGEs.deV",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1310,146 +1343,6 @@
         {
             "type": "vless",
             "tag": "🌏 CF-16",
-            "server": "172.67.161.104",
-            "server_port": 8443,
-            "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-            "transport": {
-                "path": "/?ed=2048",
-                "type": "ws",
-                "headers": {
-                    "Host": "edgood.king361.cf"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "edgood.king361.cf",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-17",
-            "server": "104.18.34.11",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "transport": {
-                "path": "/layGDYx3Fd6ODgAF/MTI5LjE1OS4yNDEuMTcy",
-                "type": "ws",
-                "headers": {
-                    "Host": "BpB-V.pagEs.dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "BpB-V.pagEs.dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-18",
-            "server": "172.66.47.26",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "transport": {
-                "path": "/Telegram@V2ray_Alpha/?ed=2560",
-                "type": "ws",
-                "headers": {
-                    "Host": "8c513cF9.GaZAALAm-PaneL.Pages.DEV"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "8c513cF9.GaZAALAm-PaneL.Pages.DEV",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-19",
-            "server": "173.245.49.174",
-            "server_port": 443,
-            "uuid": "76eab2c7-ce4d-47dc-a0b6-7151dfa08eb0",
-            "transport": {
-                "path": "/Telegram@V2ray_Alpha/?ed=2048",
-                "type": "ws",
-                "headers": {
-                    "Host": "poin.centerserver.ggff.net"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "poin.centerserver.ggff.net",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-2",
-            "server": "172.67.68.157",
-            "server_port": 443,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "transport": {
-                "path": "/KwDVhBMHIU0TeEyL/MTI5LjE1OS4yNDEuMTcy",
-                "type": "ws",
-                "headers": {
-                    "Host": "Bpb-v.pAges.DEV"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Bpb-v.pAges.DEV",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-20",
-            "server": "bpb-v.pages.dev",
-            "server_port": 2053,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
-            "transport": {
-                "path": "/YqeZWRB6xLr1OpL6/MTI5LjE1OS4yNDEuMTcy",
-                "type": "ws",
-                "headers": {
-                    "Host": "BpB-v.PAgEs.Dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "BpB-v.PAgEs.Dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-21",
-            "server": "www.speedtest.net",
-            "server_port": 443,
-            "uuid": "e2f4d1fa-0a6d-48c3-a5bb-8b438e78af23",
-            "transport": {
-                "path": "/@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----@Evay_vpn----/?ed=2560",
-                "type": "ws",
-                "headers": {
-                    "Host": "119f3a0b.chikiy123w.pages.dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "119f3a0b.chikiy123w.pages.dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-22",
             "server": "dc1bf227.vf-8co.pages.dev",
             "server_port": 443,
             "uuid": "e8b87dd9-cc8f-407c-a1f3-a564009fe6ee",
@@ -1469,8 +1362,8 @@
         },
         {
             "type": "vless",
-            "tag": "🌏 CF-23",
-            "server": "172.67.172.221",
+            "tag": "🌏 CF-17",
+            "server": "172.67.74.117",
             "server_port": 443,
             "uuid": "8250d638-45df-41fa-b06f-160d1cb1de0c",
             "transport": {
@@ -1489,68 +1382,28 @@
         },
         {
             "type": "vless",
-            "tag": "🌏 CF-24",
-            "server": "aksnmaioas.pages.dev",
-            "server_port": 443,
-            "uuid": "38720105-063f-40f5-a5eb-f3198b9b617d",
+            "tag": "🌏 CF-18",
+            "server": "bpb-v.pages.dev",
+            "server_port": 2053,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/",
+                "path": "/YqeZWRB6xLr1OpL6/MTI5LjE1OS4yNDEuMTcy",
                 "type": "ws",
                 "headers": {
-                    "Host": "aksnmaioas.pages.dev"
+                    "Host": "bpb-v.pages.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "aksnmaioas.pages.dev",
+                "server_name": "BpB-v.PAgEs.Dev",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
             "type": "trojan",
-            "tag": "🌏 CF-25",
-            "server": "108.162.193.110",
-            "server_port": 443,
-            "password": "Trevely",
-            "transport": {
-                "type": "ws",
-                "path": "/?ed=2560",
-                "headers": {
-                    "Host": "trojan.trevely.us.kg"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.trevely.us.kg",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🌏 CF-26",
-            "server": "162.159.137.232",
-            "server_port": 8443,
-            "password": "auto",
-            "transport": {
-                "type": "ws",
-                "path": "/",
-                "headers": {
-                    "Host": "e9464f45.trauma-2r4.pages.dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "e9464f45.trauma-2r4.pages.dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🌏 CF-27",
-            "server": "172.67.68.157",
+            "tag": "🌏 CF-19",
+            "server": "104.18.34.21",
             "server_port": 443,
             "password": "auto",
             "transport": {
@@ -1569,12 +1422,52 @@
         },
         {
             "type": "vless",
-            "tag": "🌏 CF-28",
+            "tag": "🌏 CF-2",
+            "server": "104.21.69.44",
+            "server_port": 2096,
+            "uuid": "98f0c223-cb75-4faa-859e-47110b1f052b",
+            "transport": {
+                "path": "/Telegram-@vpnAndroid2.@vpnAndroid2/?ed=2560",
+                "type": "ws",
+                "headers": {
+                    "Host": "iNTeRnET4EVERIeONe7.PaGes.DeV"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "iNTeRnET4EVERIeONe7.PaGes.DeV",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🌏 CF-20",
+            "server": "parsairon.ironnettt.workers.dev",
+            "server_port": 443,
+            "uuid": "29419d2e-5475-42a9-a615-996608ce0a46",
+            "transport": {
+                "path": "/",
+                "type": "ws",
+                "headers": {
+                    "Host": "parsairon.ironnettt.workers.dev"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "parsairon.ironnettt.workers.dev",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🌏 CF-21",
             "server": "pardazeshvpn-tg103.pages.dev",
             "server_port": 443,
             "uuid": "db0437ba-d0fd-488f-814d-051d1cb8b5da",
             "transport": {
-                "path": "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048",
+                "path": "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN",
                 "type": "ws",
                 "headers": {
                     "Host": "pardazeshvpn-tg103.pages.dev"
@@ -1589,13 +1482,13 @@
         },
         {
             "type": "trojan",
-            "tag": "🌏 CF-29",
-            "server": "104.18.12.229",
-            "server_port": 8443,
+            "tag": "🌏 CF-22",
+            "server": "104.17.148.22",
+            "server_port": 443,
             "password": "Watashi_VPN",
             "transport": {
                 "type": "ws",
-                "path": "/?ed=2560",
+                "path": "/",
                 "headers": {
                     "Host": "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
                 }
@@ -1603,6 +1496,143 @@
             "tls": {
                 "enabled": true,
                 "server_name": "t-watashi-r-jacket-o-people-jan.watashi-java.ir",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🌏 CF-23",
+            "server": "ppal03.teheg18260.workers.dev",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "transport": {
+                "path": "/GfO7dn5XDM9AzhmK?ed=2560",
+                "type": "ws",
+                "headers": {
+                    "Host": "ppal03.teheg18260.workers.dev"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "PpaL03.tehEG18260.wORkerS.Dev",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "trojan",
+            "tag": "🌏 CF-24",
+            "server": "104.21.66.223",
+            "server_port": 443,
+            "password": "f2191442-1436-3d79-801e-80d8de896c73",
+            "transport": {
+                "type": "ws",
+                "path": "/91838f3b905c42c7aa5b664b27d8193b",
+                "headers": {
+                    "Host": "jp2-july.88888802.xyz"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "jp2-july.88888802.xyz",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "trojan",
+            "tag": "🌏 CF-25",
+            "server": "104.16.159.7",
+            "server_port": 443,
+            "password": "4732adfa16c6450bbef87264e41332db",
+            "transport": {
+                "type": "ws",
+                "path": "/6b777a91",
+                "headers": {
+                    "Host": "bangladeshipatri.com"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bangladeshipatri.com",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "trojan",
+            "tag": "🌏 CF-26",
+            "server": "us3.88888804.xyz",
+            "server_port": 443,
+            "password": "f2191442-1436-3d79-801e-80d8de896c73",
+            "transport": {
+                "type": "ws",
+                "path": "/91838f3b905c42c7aa5b664b27d8193b",
+                "headers": {}
+            },
+            "tls": {
+                "enabled": true,
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "trojan",
+            "tag": "🌏 CF-27",
+            "server": "104.16.159.6",
+            "server_port": 443,
+            "password": "669d0ac7b5b64ebbb1abb75d5d540a5c",
+            "transport": {
+                "type": "ws",
+                "path": "/6b777a91",
+                "headers": {
+                    "Host": "bangladeshipatri.com"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bangladeshipatri.com",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🌏 CF-28",
+            "server": "hagh.pages.dev",
+            "server_port": 443,
+            "uuid": "d3a12e79-ef42-4268-b367-42eeb3494e60",
+            "transport": {
+                "path": "/@alpha_v2ray_fazayi/?ed=2048",
+                "type": "ws",
+                "headers": {
+                    "Host": "hagh.pages.dev"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "Hagh.PaGes.DEv",
+                "insecure": true
+            },
+            "tcp_fast_open": false
+        },
+        {
+            "type": "vless",
+            "tag": "🌏 CF-29",
+            "server": "ppal03.keeley-green.workers.dev",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "transport": {
+                "path": "/44aKMzvQLYsncxv5?ed=2560",
+                "type": "ws",
+                "headers": {
+                    "Host": "ppal03.keeley-green.workers.dev"
+                }
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "PPAL03.KEEleY-greEN.workERs.DEv",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1610,59 +1640,59 @@
         {
             "type": "vless",
             "tag": "🌏 CF-3",
-            "server": "172.66.44.195",
+            "server": "172.64.153.245",
             "server_port": 443,
             "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "Telegram-PROXY_MTM-_-_-_-Telegram-PROXY_MTM/?ed=2048",
+                "path": "/layGDYx3Fd6ODgAF/MTI5LjE1OS4yNDEuMTcy",
                 "type": "ws",
                 "headers": {
-                    "Host": "23sPT.pAGEs.dEV"
+                    "Host": "BpB-V.pagEs.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "23sPT.pAGEs.dEV",
+                "server_name": "BpB-V.pagEs.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
-            "type": "trojan",
+            "type": "vless",
             "tag": "🌏 CF-30",
-            "server": "104.17.147.22",
-            "server_port": 443,
-            "password": "Watashi_VPN",
+            "server": "uciran-uciran-uciran-uciran-uciran-uciran.wamivah516.workers.dev",
+            "server_port": 2053,
+            "uuid": "e57ea30c-9075-46fc-8636-3d2aa1aa99e6",
             "transport": {
+                "path": "/?ed=2047",
                 "type": "ws",
-                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "t-watashi-r-jacket-o-people-jan.watashi-java.ir"
+                    "Host": "uciran-uciran-uciran-uciran-uciran-uciran.wamivah516.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "t-watashi-r-jacket-o-people-jan.watashi-java.ir",
+                "server_name": "uciran-uciran-uciran-uciran-uciran-uciran.wamivah516.workers.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
-            "type": "trojan",
+            "type": "vless",
             "tag": "🌏 CF-31",
-            "server": "104.17.215.4",
+            "server": "ppal03.abdullah-maveryck.workers.dev",
             "server_port": 443,
-            "password": "cb1f26aa437d4bfa9b841d28503ce8cc",
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
+                "path": "/aU9CfsWoY5YeBGLV?ed=2560",
                 "type": "ws",
-                "path": "6b777a91",
                 "headers": {
-                    "Host": "jobscareerfortoday.com"
+                    "Host": "ppal03.abdullah-maveryck.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "jobscareerfortoday.com",
+                "server_name": "PPaL03.AbDulLAH-MAVerYcK.woRKeRS.DEv",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1670,19 +1700,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-32",
-            "server": "bpb-aol.pages.dev",
-            "server_port": 2087,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "server": "uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev",
+            "server_port": 443,
+            "uuid": "71dce9af-d790-4b38-a1fd-7745e0923bd3",
             "transport": {
-                "path": "/ShcMqONF0EMFNoxj?ed=2560fp=randomized",
+                "path": "/-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR/?ed=2047",
                 "type": "ws",
                 "headers": {
-                    "Host": "bpb-aol.pages.dev"
+                    "Host": "uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Bpb-AoL.PAGes.deV",
+                "server_name": "uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1690,59 +1720,59 @@
         {
             "type": "vless",
             "tag": "🌏 CF-33",
-            "server": "bpb-aol.pages.dev",
-            "server_port": 2083,
+            "server": "ppal03.devorah-azura.workers.dev",
+            "server_port": 443,
             "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/wyFz2JSmx8eVbVjF?ed=2560",
+                "path": "/uFMLeOpuNwxhUHe1?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "bpb-aol.pages.dev"
+                    "Host": "ppal03.devorah-azura.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Bpb-AOL.PAgeS.Dev",
+                "server_name": "pPal03.dEvORAH-Azura.WoRkErs.Dev",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
-            "type": "trojan",
+            "type": "vless",
             "tag": "🌏 CF-34",
-            "server": "104.21.90.210",
+            "server": "hello-world-empty-feather-0943.sitosa5105.workers.dev",
             "server_port": 443,
-            "password": "auto",
+            "uuid": "5d8b1149-8f78-4154-a647-16563ec99c8a",
             "transport": {
+                "path": "/",
                 "type": "ws",
-                "path": "/abbas.ab841vpn.workers.dev/?ed=2560.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY.Telegram-@ViP_FRAGMENT_V2RAY",
                 "headers": {
-                    "Host": "159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com"
+                    "Host": "hello-world-empty-feather-0943.sitosa5105.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com",
+                "server_name": "hello-world-empty-feather-0943.sitosa5105.workers.Dev",
                 "insecure": true
             },
             "tcp_fast_open": false
         },
         {
-            "type": "trojan",
+            "type": "vless",
             "tag": "🌏 CF-35",
-            "server": "172.67.213.48",
+            "server": "freedom11.fmnxmt.workers.dev",
             "server_port": 443,
-            "password": "auto",
+            "uuid": "375dd25d-0ec6-454c-be6f-ce67b196b23b",
             "transport": {
+                "path": "/",
                 "type": "ws",
-                "path": "/?ed=2560",
                 "headers": {
-                    "Host": "esetsecuritylicense2.wawafec355.workers.dev"
+                    "Host": "freedom11.fmnxmt.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "esetsecuritylicense2.wawafec355.workers.dev",
+                "server_name": "freedom11.fmnxmt.workers.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1750,79 +1780,20 @@
         {
             "type": "vless",
             "tag": "🌏 CF-36",
-            "server": "worker-aged-boat-aa11.jajoyo1612.workers.Dev",
+            "server": "freedom14.geraxex389.workers.dev",
             "server_port": 443,
-            "uuid": "ca234697-1849-4ad2-b673-85a2cc96d986",
+            "uuid": "3f266d25-21aa-4498-bb1a-ce6d1d327aaf",
+            "packet_encoding": "xudp",
             "transport": {
                 "path": "/",
                 "type": "ws",
                 "headers": {
-                    "Host": "worker-aged-boat-aa11.jajoyo1612.workers.Dev"
+                    "Host": "freedom14.geraxex389.workers.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "worker-aged-boat-aa11.jajoyo1612.workers.Dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "trojan",
-            "tag": "🌏 CF-37",
-            "server": "198.41.220.16",
-            "server_port": 443,
-            "password": "b0b861c2c85346a389b9e95769c3cba4",
-            "transport": {
-                "type": "ws",
-                "path": "/6b777a91",
-                "headers": {
-                    "Host": "avianrecruit.com"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "avianrecruit.com",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-38",
-            "server": "joinmahdiserver.jaiktzw.workers.dev",
-            "server_port": 443,
-            "uuid": "213acced-2c20-405a-9742-226caa911199",
-            "transport": {
-                "path": "/?ed=2048",
-                "type": "ws",
-                "headers": {
-                    "Host": "joinmahdiserver.jaiktzw.workers.dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "Joinmahdiserver.jaiktzw.workers.dev",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-39",
-            "server": "anaSErViCeZilOrX.iXpUB.WORKErS.deV",
-            "server_port": 443,
-            "uuid": "35caec98-86de-4f38-a011-eb7e134446c7",
-            "transport": {
-                "path": "/@VPNHTTPInjectorfree",
-                "type": "ws",
-                "headers": {
-                    "Host": "anaSErViCeZilOrX.iXpUB.WORKErS.deV"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "anaSErViCeZilOrX.iXpUB.WORKErS.deV",
+                "server_name": "freedom14.geraxex389.workers.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1830,39 +1801,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-4",
-            "server": "172.66.44.135",
-            "server_port": 443,
+            "server": "104.20.6.134",
+            "server_port": 2053,
             "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/bM0whXZGCwaUmbcx?ed=2560",
+                "path": "/zvk78A3RrwtbmvAX/MTI5LjE1OS4yNDEuMTcy",
                 "type": "ws",
                 "headers": {
-                    "Host": "chaNnel-ConFIgt.PagEs.dEV"
+                    "Host": "bpb-v.PAGEs.deV"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "chaNnel-ConFIgt.PagEs.dEV",
-                "insecure": true
-            },
-            "tcp_fast_open": false
-        },
-        {
-            "type": "vless",
-            "tag": "🌏 CF-40",
-            "server": "bypassfilter.nuktsv.workers.dev",
-            "server_port": 443,
-            "uuid": "b0e6a2c9-e667-4e42-9cb3-77d7db3e736b",
-            "transport": {
-                "path": "/@bypass_filter/",
-                "type": "ws",
-                "headers": {
-                    "Host": "bypassfilter.nuktsv.workers.dev"
-                }
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "bypassfilter.nuktsv.workers.dev",
+                "server_name": "bpb-v.PAGEs.deV",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1870,19 +1821,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-5",
-            "server": "172.66.44.137",
-            "server_port": 2053,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "server": "172.66.47.151",
+            "server_port": 443,
+            "uuid": "a64f0cea-ca89-40e6-b316-b3badff1eb90",
             "transport": {
-                "path": "/YqeZWRB6xLr1OpL6/MTI5LjE1OS4yNDEuMTcy",
+                "path": "/T7OzaaLG5SkllZJf?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "BpB-v.PAgEs.Dev"
+                    "Host": "iSaA1.paGes.DEv"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "BpB-v.PAgEs.Dev",
+                "server_name": "iSaA1.paGes.DEv",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1890,19 +1841,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-6",
-            "server": "172.67.68.72",
-            "server_port": 2053,
-            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
+            "server": "172.66.44.57",
+            "server_port": 443,
+            "uuid": "2d01b0eb-91fd-4eae-9fb0-50c08856181d",
             "transport": {
-                "path": "/sorKBxD3vnPzqQjI/MTI5LjE1OS4yNDEuMTcy",
+                "path": "/?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "bpB-v.PageS.dEV"
+                    "Host": "e420ceed.aryoo-vpn-friends.pages.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "bpB-v.PageS.dEV",
+                "server_name": "e420ceed.aryoo-vpn-friends.pages.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1910,19 +1861,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-7",
-            "server": "104.26.13.8",
-            "server_port": 8443,
-            "uuid": "b28cb5ea-6cba-4b26-a5c5-590fd0f4e818",
+            "server": "104.21.94.117",
+            "server_port": 443,
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/telegram___@ELiV2RY___?ed=2560",
+                "path": "/TvZIHOXbRNImQHw3?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "CHannEL-id-Eliv2Ry.PagES.dEV"
+                    "Host": "PPAL03.lUKIS-BRAve.workeRs.Dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "CHannEL-id-Eliv2Ry.PagES.dEV",
+                "server_name": "PPAL03.lUKIS-BRAve.workeRs.Dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1930,19 +1881,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-8",
-            "server": "172.66.47.155",
+            "server": "172.67.128.175",
             "server_port": 443,
-            "uuid": "34a83286-ba4e-4f0a-ac08-77a95469eeaf",
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/",
+                "path": "/w4NQA9a1zXi9eeOo?ed=2560",
                 "type": "ws",
                 "headers": {
-                    "Host": "pardazesh18.pages.dev"
+                    "Host": "PPal03.tiCeJE1067.wOrkERs.dev"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "pardazesh18.pages.dev",
+                "server_name": "PPal03.tiCeJE1067.wOrkERs.dev",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1950,19 +1901,19 @@
         {
             "type": "vless",
             "tag": "🌏 CF-9",
-            "server": "104.18.1.20",
+            "server": "104.20.6.134",
             "server_port": 443,
-            "uuid": "f06ac303-e626-451d-bcfc-ee825ee69398",
+            "uuid": "89b3cbba-e6ac-485a-9481-976a0415eab9",
             "transport": {
-                "path": "/oyF1T0jNP2ARuOYS?ed=2048",
+                "path": "/LtZFqGz6qD8jBoHW/MTI5LjE1OS4yNDEuMTcy",
                 "type": "ws",
                 "headers": {
-                    "Host": "azadNet-SeMej.PAGES.DEV"
+                    "Host": "bPB-V.pAges.dEv"
                 }
             },
             "tls": {
                 "enabled": true,
-                "server_name": "azadNet-SeMej.PAGES.DEV",
+                "server_name": "bPB-V.pAges.dEv",
                 "insecure": true
             },
             "tcp_fast_open": false
@@ -1973,24 +1924,28 @@
             "outbounds": [
                 "♻️ 自动选择",
                 "🎯 全球直连",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -1998,6 +1953,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2011,21 +1967,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2063,11 +2018,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2079,24 +2030,28 @@
             "type": "urltest",
             "tag": "♻️ 自动选择",
             "outbounds": [
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2104,6 +2059,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2117,21 +2073,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2169,11 +2124,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2190,24 +2141,28 @@
                 "🔰 节点选择",
                 "♻️ 自动选择",
                 "🎯 全球直连",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2215,6 +2170,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2228,21 +2184,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2280,11 +2235,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2317,24 +2268,28 @@
                 "🔰 节点选择",
                 "♻️ 自动选择",
                 "🎯 全球直连",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2342,6 +2297,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2355,21 +2311,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2407,11 +2362,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2433,24 +2384,28 @@
             "outbounds": [
                 "🎯 全球直连",
                 "🔰 节点选择",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2458,6 +2413,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2471,21 +2427,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2523,11 +2478,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2541,24 +2492,28 @@
             "outbounds": [
                 "🔰 节点选择",
                 "🎯 全球直连",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2566,6 +2521,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2579,21 +2535,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2631,11 +2586,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2650,24 +2601,28 @@
                 "🔰 节点选择",
                 "🎯 全球直连",
                 "♻️ 自动选择",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2675,6 +2630,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2688,21 +2644,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2740,11 +2695,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2774,24 +2725,28 @@
                 "🔰 节点选择",
                 "🎯 全球直连",
                 "♻️ 自动选择",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2799,6 +2754,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2812,21 +2768,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2864,11 +2819,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
@@ -2881,24 +2832,28 @@
             "tag": "GLOBAL",
             "outbounds": [
                 "DIRECT",
-                "SI-1",
+                "LT-1",
+                "SC-1",
+                "SC-2",
+                "SC-3",
+                "SE-1",
                 "Un-1",
                 "Un-2",
                 "Un-3",
-                "ZA-1",
-                "ZA-2",
                 "🇨🇦 CA-1",
                 "🇨🇦 CA-2",
-                "🇨🇦 CA-3",
+                "🇨🇳 CN-1",
                 "🇨🇳 TW-1",
-                "🇨🇳 TW-2",
                 "🇩🇪 DE-1",
-                "🇩🇪 DE-2",
-                "🇩🇪 DE-3",
                 "🇬🇧 GB-1",
                 "🇭🇰 HK-1",
                 "🇭🇰 HK-2",
                 "🇭🇰 HK-3",
+                "🇭🇰 HK-4",
+                "🇭🇰 HK-5",
+                "🇭🇰 HK-6",
+                "🇭🇰 HK-7",
+                "🇭🇰 HK-8",
                 "🇮🇳 IN-1",
                 "🇮🇳 IN-2",
                 "🇯🇵 JP-1",
@@ -2906,6 +2861,7 @@
                 "🇯🇵 JP-3",
                 "🇯🇵 JP-4",
                 "🇯🇵 JP-5",
+                "🇯🇵 JP-6",
                 "🇰🇷 KR-1",
                 "🇰🇷 KR-10",
                 "🇰🇷 KR-2",
@@ -2919,21 +2875,20 @@
                 "🇳🇱 NL-1",
                 "🇷🇺 RU-1",
                 "🇷🇺 RU-2",
+                "🇷🇺 RU-3",
+                "🇷🇺 RU-4",
+                "🇷🇺 RU-5",
+                "🇷🇺 RU-6",
+                "🇸🇬 SG-1",
+                "🇸🇬 SG-2",
+                "🇸🇬 SG-3",
+                "🇸🇬 SG-4",
+                "🇸🇬 SG-5",
+                "🇸🇬 SG-6",
                 "🇺🇸 US-1",
                 "🇺🇸 US-10",
                 "🇺🇸 US-11",
-                "🇺🇸 US-12",
-                "🇺🇸 US-13",
-                "🇺🇸 US-14",
-                "🇺🇸 US-15",
-                "🇺🇸 US-16",
-                "🇺🇸 US-17",
-                "🇺🇸 US-18",
-                "🇺🇸 US-19",
                 "🇺🇸 US-2",
-                "🇺🇸 US-20",
-                "🇺🇸 US-21",
-                "🇺🇸 US-22",
                 "🇺🇸 US-3",
                 "🇺🇸 US-4",
                 "🇺🇸 US-5",
@@ -2971,11 +2926,7 @@
                 "🌏 CF-34",
                 "🌏 CF-35",
                 "🌏 CF-36",
-                "🌏 CF-37",
-                "🌏 CF-38",
-                "🌏 CF-39",
                 "🌏 CF-4",
-                "🌏 CF-40",
                 "🌏 CF-5",
                 "🌏 CF-6",
                 "🌏 CF-7",
