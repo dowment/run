@@ -5,157 +5,146 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: AE-1, server: 193.123.76.84, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: BR-1, server: 144.22.242.34, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: BR-2, server: 64.181.161.195, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: CH-1, server: 152.67.95.183, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: FI-1, server: 45.138.73.200, port: 2053, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: IT-1, server: 87.120.237.36, port: 81, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: LT-1, server: 89.116.161.250, port: 8443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: true, servername: cfed.tgzdyz2.top, client-fingerprint: chrome, network: ws, ws-opts: {path: /tg@zdyz2security=tls, headers: {Host: cfed.tgzdyz2.top}}, udp: true}
-  - {name: LT-2, server: 89.116.161.250, port: 8443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: true, servername: cfed.tgzdyz2.top, client-fingerprint: chrome, network: ws, ws-opts: {path: TG@ZDYZ2, headers: {Host: cfed.tgzdyz2.top}}, udp: true}
-  - {name: LT-3, server: 89.116.250.6, port: 2083, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
-  - {name: LV-1, server: 195.123.212.222, port: 2053, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: RS-1, server: 193.57.139.78, port: 81, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, tls: true, tfo: false, skip-cert-verify: true, servername: global2.ccdd.site, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}, udp: true}
-  - {name: SE-1, server: 176.97.77.76, port: 443, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: Un-1, server: jiedianfsc.fsc.interld123456789.com, port: 20000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: Un-2, server: ru-01.cloudlion.me, port: 8005, type: hysteria2, password: 1947e8a2-f868-4ef5-8024-21c9dfa27450, auth: 1947e8a2-f868-4ef5-8024-21c9dfa27450, skip-cert-verify: true, udp: true}
-  - {name: Un-3, server: tr-01.cloudlion.me, port: 8005, type: hysteria2, password: bc5744c4-39cd-4883-abb8-01db364d9cc9, auth: bc5744c4-39cd-4883-abb8-01db364d9cc9, skip-cert-verify: true, udp: true}
-  - {name: Un-4, server: ru-01.cloudlion.me, port: 8005, type: hysteria2, password: bc5744c4-39cd-4883-abb8-01db364d9cc9, auth: bc5744c4-39cd-4883-abb8-01db364d9cc9, skip-cert-verify: true, udp: true}
-  - {name: Un-5, server: 45.76.0.86, port: 443, type: hysteria2, password: 1f17cdf0578a2860, auth: 1f17cdf0578a2860, skip-cert-verify: true, obfs: salamander, obfs-password: 4b817757, udp: true}
-  - {name: 🇦🇺 AU-1, server: 152.69.180.226, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: api.push.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA-1, server: bgp.xn--jbyq16e.xyz, port: 41161, type: hysteria2, password: d3c54db8-d7c3-47c4-84df-62aaa1f85506, auth: d3c54db8-d7c3-47c4-84df-62aaa1f85506, sni: apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA-2, server: bgp.xn--jbyq16e.xyz, port: 41161, type: hysteria2, password: cbd41a4c-c287-4b51-8898-37040ac4cc68, auth: cbd41a4c-c287-4b51-8898-37040ac4cc68, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇦 CA-3, server: bgp.xn--jbyq16e.xyz, port: 41161, type: hysteria2, password: 30601950-e0aa-4de1-bf39-3e061ade08db, auth: 30601950-e0aa-4de1-bf39-3e061ade08db, skip-cert-verify: true, udp: true}
-  - {name: 🇨🇳 TW-1, server: 122.116.105.15, port: 10443, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: 🇩🇪 DE-1, server: 138.3.255.157, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: api.push.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇩🇪 DE-2, server: 92.246.139.211, port: 443, type: vless, uuid: c6802364-85db-4539-b20b-0b4257b7b407, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs}, servername: yahoo.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇫🇷 FR-1, server: 129.151.242.47, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇬🇧 GB-1, server: 198.244.244.170, port: 8443, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: 🇭🇰 HK-1, server: hk-02.cloudlion.me, port: 8005, type: hysteria2, password: 9a601d59-4941-45e3-a863-c040737f2b25, auth: 9a601d59-4941-45e3-a863-c040737f2b25, skip-cert-verify: true, udp: true}
-  - {name: 🇭🇰 HK-2, server: dee33.azurewebsites.net, port: 443, type: vless, uuid: 6f995056-7802-4a1d-bff7-61678e626c3f, tls: true, tfo: false, skip-cert-verify: true, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: dee33.azurewebsites.net}}, udp: true}
-  - {name: 🇮🇳 IN-1, server: 144.24.102.115, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: api.push.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇯🇵 JP-1, server: 154.92.9.1, port: 443, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: sb-1u6.pageS.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/o56edk55jth9andd/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: sb-1u6.pageS.Dev}}, udp: true}
-  - {name: 🇰🇷 KR-1, server: 150.230.254.196, port: 34237, type: vless, uuid: e8899a8e-729a-43bc-aebf-95e12c6c6db6, tls: true, tfo: false, skip-cert-verify: true, servername: global2.ccdd.site, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: global2.ccdd.site}}, udp: true}
-  - {name: 🇰🇷 KR-2, server: 121.182.55.77, port: 30063, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
-  - {name: 🇰🇷 KR-3, server: 146.56.174.194, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: api.push.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇰🇷 KR-4, server: 152.69.225.196, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇳🇱 NL-1, server: 80.89.229.119, port: 2053, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: 🇳🇱 NL-2, server: 158.101.218.147, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
+  - {name: CH-1, server: 185.18.250.185, port: 2053, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
+  - {name: EE-1, server: 46.22.213.78, port: 8443, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
+  - {name: KZ-1, server: 194.76.18.116, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /blue, headers: {Host: lw.kpcloud.eu.org}}, udp: true}
+  - {name: Un-1, server: ru-01.cloudlion.me, port: 8005, type: hysteria2, password: 9a601d59-4941-45e3-a863-c040737f2b25, auth: 9a601d59-4941-45e3-a863-c040737f2b25, skip-cert-verify: true, udp: true}
+  - {name: Un-10, server: 66.135.11.68, port: 443, type: hysteria2, password: 4e9ee29b39a28277, auth: 4e9ee29b39a28277, skip-cert-verify: true, obfs: salamander, obfs-password: 13f7ba5f, udp: true}
+  - {name: Un-11, server: 104.20.23.24, port: 443, type: vmess, uuid: b9e82117-ed3a-4098-8153-100ca12aa523, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: "", network: grpc, grpc-opts: {grpc-service-name: vcDaZhsM9WvxysUmfBox4IUADVrA}, udp: true}
+  - {name: Un-2, server: 66.135.11.68, port: 443, type: hysteria2, password: 4e9ee29b39a28277, auth: 4e9ee29b39a28277, sni: 66.135.11.68, skip-cert-verify: true, obfs: salamander, obfs-password: 13f7ba5f, udp: true}
+  - {name: Un-3, server: tr-01.cloudlion.me, port: 8005, type: hysteria2, password: 9a601d59-4941-45e3-a863-c040737f2b25, auth: 9a601d59-4941-45e3-a863-c040737f2b25, skip-cert-verify: true, udp: true}
+  - {name: Un-4, server: 70.34.207.153, port: 443, type: hysteria2, password: 18240b2dfdd76484, auth: 18240b2dfdd76484, skip-cert-verify: true, obfs: salamander, obfs-password: d2648ec2, udp: true}
+  - {name: Un-5, server: ru-01.cloudlion.me, port: 8005, type: hysteria2, password: 1947e8a2-f868-4ef5-8024-21c9dfa27450, auth: 1947e8a2-f868-4ef5-8024-21c9dfa27450, skip-cert-verify: true, udp: true}
+  - {name: Un-6, server: 66.135.11.68, port: 443, type: hysteria2, password: 4e9ee29b39a28277, auth: 4e9ee29b39a28277, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, obfs: salamander, obfs-password: 13f7ba5f, udp: true}
+  - {name: Un-7, server: tr-01.cloudlion.me, port: 8005, type: hysteria2, password: 1947e8a2-f868-4ef5-8024-21c9dfa27450, auth: 1947e8a2-f868-4ef5-8024-21c9dfa27450, skip-cert-verify: true, udp: true}
+  - {name: Un-8, server: tr-01.cloudlion.me, port: 8005, type: hysteria2, password: bc5744c4-39cd-4883-abb8-01db364d9cc9, auth: bc5744c4-39cd-4883-abb8-01db364d9cc9, skip-cert-verify: true, udp: true}
+  - {name: Un-9, server: 45.76.0.86, port: 443, type: hysteria2, password: 1f17cdf0578a2860, auth: 1f17cdf0578a2860, skip-cert-verify: true, obfs: salamander, obfs-password: 4b817757, udp: true}
+  - {name: 🇨🇦 CA-1, server: 134.195.196.138, port: 443, type: trojan, password: e8105dfd24414268b6c7652c63731097, sni: avianrecruit.com, skip-cert-verify: true, network: ws, ws-opts: {path: 6b777a91, headers: {Host: avianrecruit.com}}, udp: true}
+  - {name: 🇫🇷 FR-1, server: 89.168.43.28, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.ylks01.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /blue, headers: {Host: lw.ylks01.eu.org}}, udp: true}
+  - {name: 🇬🇧 GB-1, server: 172.99.190.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇬🇧 GB-2, server: 94.247.142.241, port: 443, type: vless, uuid: 775213ac-3976-439a-8977-3277c0e4735d, tls: true, tfo: false, skip-cert-verify: true, servername: fq521.6789.cloudns.be, client-fingerprint: chrome, network: ws, ws-opts: {path: /twitterfreecodessecurity, headers: {Host: fq521.6789.cloudns.be}}, udp: true}
+  - {name: 🇬🇧 GB-3, server: 94.247.142.245, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
+  - {name: 🇰🇷 KR-1, server: 61.84.74.108, port: 30017, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇰🇷 KR-2, server: 211.228.180.147, port: 12273, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
   - {name: 🇷🇺 RU-1, server: 185.22.152.93, port: 47382, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
-  - {name: 🇷🇺 RU-2, server: 185.233.83.225, port: 2053, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: 🇷🇺 RU-3, server: 185.174.138.141, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
-  - {name: 🇷🇺 RU-4, server: 45.67.215.95, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lx.ylka.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lx.ylka.us.kg}}, udp: true}
-  - {name: 🇸🇬 SG-1, server: 158.178.236.104, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: api.push.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-2, server: jiedianfsc.fsc.interld123456789.com, port: 24000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: 234224.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-3, server: jiedianfsc.fsc.interld123456789.com, port: 24000, type: hysteria2, password: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, auth: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, sni: 234224.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-4, server: sg-02.cloudlion.me, port: 8005, type: hysteria2, password: bc5744c4-39cd-4883-abb8-01db364d9cc9, auth: bc5744c4-39cd-4883-abb8-01db364d9cc9, skip-cert-verify: true, udp: true}
-  - {name: 🇸🇬 SG-5, server: sg5.helloco.xyz, port: 60001, type: vless, uuid: 02b4f4d5-2516-43e7-88cf-a164237723ae, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: V2A_eN7TFvkEQyulDKBndU8g-1DB4xlsobNtr8mKygk, short-id: "bcab9233" }, servername: python.org, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇺🇸 US-1, server: 149.104.35.202, port: 3128, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
-  - {name: 🇺🇸 US-10, server: 108.181.23.71, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: tv.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-11, server: 108.181.23.235, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-12, server: 108.181.23.247, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-13, server: 108.181.23.253, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-14, server: 129.146.95.165, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-15, server: 159.112.235.90, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /security=tls, headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
-  - {name: 🇺🇸 US-16, server: 216.24.57.59, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lx.ylka.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lx.ylka.us.kg}}, udp: true}
-  - {name: 🇺🇸 US-17, server: 209.208.227.150, port: 2083, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: SB-1U6.PAgeS.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/urenftuu3z1kqryb/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: SB-1U6.PAgeS.dEv}}, udp: true}
-  - {name: 🇺🇸 US-18, server: 69.84.182.84, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: da.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=proxyip.us.fxxk.dedyn.io, headers: {Host: da.ylks.xyz}}, udp: true}
-  - {name: 🇺🇸 US-19, server: 45.194.53.13, port: 8443, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: sB-1U6.PAgeS.deV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/bdbeqy5r01xte4fl/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: sB-1U6.PAgeS.deV}}, udp: true}
-  - {name: 🇺🇸 US-2, server: 149.104.35.245, port: 3128, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
-  - {name: 🇺🇸 US-20, server: 199.34.228.170, port: 443, type: vless, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, tls: true, tfo: false, skip-cert-verify: true, servername: bpB005.paGeS.DEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, udp: true}
-  - {name: 🇺🇸 US-21, server: jiedianfsc.fsc.interld123456789.com, port: 28000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-22, server: jiedianfsc.fsc.interld123456789.com, port: 28002, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-23, server: 207.148.22.93, port: 443, type: hysteria2, password: 9bb452b106ffc217, auth: 9bb452b106ffc217, skip-cert-verify: true, obfs: salamander, obfs-password: cd29099d, udp: true}
-  - {name: 🇺🇸 US-24, server: jiedianfsc.fsc.interld123456789.com, port: 28002, type: hysteria2, password: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, auth: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-25, server: 207.148.22.93, port: 443, type: hysteria2, password: 9bb452b106ffc217, auth: 9bb452b106ffc217, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, obfs: salamander, obfs-password: cd29099d, udp: true}
-  - {name: 🇺🇸 US-3, server: 156.243.19.241, port: 3128, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
-  - {name: 🇺🇸 US-4, server: 149.104.35.252, port: 3128, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
-  - {name: 🇺🇸 US-5, server: 163.123.192.62, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: apps.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-6, server: 163.123.192.151, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: music.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-7, server: 108.181.24.43, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: www.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-8, server: 163.123.192.152, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: music.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🇺🇸 US-9, server: 163.123.192.149, port: 35000, type: hysteria2, password: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, auth: 7acb4518-7214-4120-b0c3-b3b8f7a5260b, sni: apps.apple.com, skip-cert-verify: true, udp: true}
-  - {name: 🌏 CF-1, server: 104.19.107.190, port: 2096, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
-  - {name: 🌏 CF-10, server: 172.66.46.215, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: V2ngfAST-2Vi.pagEs.DeV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/fxQzJFKeGt9L5osi?ed=2560", headers: {Host: V2ngfAST-2Vi.pagEs.DeV}}, udp: true}
-  - {name: 🌏 CF-11, server: 104.26.14.85, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: 20FB0424.bpb-worKer-PaNeL-1XD.paGEs.DEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/akgv7dKwMldGQRQP?ed=2560", headers: {Host: 20FB0424.bpb-worKer-PaNeL-1XD.paGEs.DEv}}, udp: true}
-  - {name: 🌏 CF-12, server: 104.21.26.222, port: 443, type: vless, uuid: 6951bb60-60fd-4fad-8964-7b2ed7ced8a9, tls: true, tfo: false, skip-cert-verify: true, servername: 47441234942388412428717014952546.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou, client-fingerprint: chrome, network: ws, ws-opts: {path: /V2LINE-TELEGRAM-CHANNEL-VLESS-WS-TLS, headers: {Host: 47441234942388412428717014952546.chrsjfklsdjfkljoierfdjklfjlkefeojsdlkfjeoifjsdlkfjweoifjlsdchrs.cyou}}, udp: true}
-  - {name: 🌏 CF-13, server: 188.114.98.24, port: 2053, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: bPb-v.PageS.DEV, client-fingerprint: chrome, network: ws, ws-opts: {path: /R2lncvPJWZWjt7Oi/MTI5LjE1OS4yNDEuMTcy, headers: {Host: bPb-v.PageS.DEV}}, udp: true}
-  - {name: 🌏 CF-14, server: 173.245.49.210, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
-  - {name: 🌏 CF-15, server: 188.114.96.193, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
-  - {name: 🌏 CF-16, server: 173.245.58.204, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
-  - {name: 🌏 CF-17, server: 198.41.202.200, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
-  - {name: 🌏 CF-18, server: 104.20.78.17, port: 443, type: vless, uuid: e8b87dd9-cc8f-407c-a1f3-a564009fe6ee, tls: true, tfo: false, skip-cert-verify: true, servername: dc1bf227.vf-8co.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@Azarakhsh_Proxy/?ed=2048", headers: {Host: dc1bf227.vf-8co.pages.dev}}, udp: true}
-  - {name: 🌏 CF-19, server: 104.27.206.92, port: 443, type: vless, uuid: f06ac303-e626-451d-bcfc-ee825ee69398, tls: true, tfo: false, skip-cert-verify: true, servername: AzAdnET-SemeJ.pAGES.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/iLBB4pavFZGckVIC?ed=2048", headers: {Host: AzAdnET-SemeJ.pAGES.dev}}, udp: true}
-  - {name: 🌏 CF-2, server: 141.101.113.186, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-20, server: 104.27.207.92, port: 443, type: vless, uuid: f06ac303-e626-451d-bcfc-ee825ee69398, tls: true, tfo: false, skip-cert-verify: true, servername: AzAdnET-SemeJ.pAGES.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram-MARAMBASHI/?ed=2560", headers: {Host: AzAdnET-SemeJ.pAGES.dev}}, udp: true}
-  - {name: 🌏 CF-21, server: 104.17.147.22, port: 8443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: JOiNmahDIsErVER-Bg3.PAGes.deV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/bSy3kNZL7wmMA0OS?ed=2560", headers: {Host: JOiNmahDIsErVER-Bg3.PAGes.deV}}, udp: true}
-  - {name: 🌏 CF-22, server: ::ffff:104.18.186.83, port: 443, type: vless, uuid: d342d11e-d424-4583-b36e-524ab1f0afa4, tls: true, tfo: false, skip-cert-verify: true, servername: xxx.donated001.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/@V2VIPCHANNEL/?ed=2048", headers: {Host: xxx.donated001.workers.dev}}, udp: true}
-  - {name: 🌏 CF-23, server: freedom5.cihafi6629.workers.dev, port: 443, type: vless, uuid: 6cca12be-0968-4da8-8891-20c912de7d75, tls: true, tfo: false, skip-cert-verify: true, servername: freedom5.cihafi6629.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: freedom5.cihafi6629.workers.dev}}, udp: true}
-  - {name: 🌏 CF-24, server: pardazeshvpn-tg56.pages.dev, port: 8443, type: vless, uuid: 1de40725-3e6b-42b1-9e3e-330c852d049e, tls: true, tfo: false, skip-cert-verify: true, servername: pardazeshvpn-tg56.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048", headers: {Host: pardazeshvpn-tg56.pages.dev}}, udp: true}
-  - {name: 🌏 CF-25, server: pardazeshvpn-tg56.pages.dev, port: 8443, type: vless, uuid: 1de40725-3e6b-42b1-9e3e-330c852d049e, tls: true, tfo: false, skip-cert-verify: true, servername: pardazeshvpn-tg56.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram:", headers: {Host: pardazeshvpn-tg56.pages.dev}}, udp: true}
-  - {name: 🌏 CF-26, server: 23spt.pages.dev, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: 23sPT.pAGEs.dEV, client-fingerprint: chrome, network: ws, ws-opts: {path: /xqc11iXB2DOVwbv9, headers: {Host: 23spt.pages.dev}}, udp: true}
-  - {name: 🌏 CF-27, server: uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev, port: 443, type: vless, uuid: 71dce9af-d790-4b38-a1fd-7745e0923bd3, tls: true, tfo: false, skip-cert-verify: true, servername: uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR/?ed=2047", headers: {Host: uciranir-uciranir-uciranir-uciranir-uciranir-uiranir-uciranir2.marol78205.workers.dev}}, udp: true}
-  - {name: 🌏 CF-28, server: bypass.dd-6b2.workers.dev, port: 443, type: vless, uuid: b0e6a2c9-e667-4e42-9cb3-77d7db3e736b, tls: true, tfo: false, skip-cert-verify: true, servername: bypass.dd-6b2.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /@bypass_filter/, headers: {Host: bypass.dd-6b2.workers.dev}}, udp: true}
-  - {name: 🌏 CF-29, server: easynet23.mfrpb.workers.dev, port: 443, type: vless, uuid: 297121ff-c2a0-4f7a-b17c-8517e1e43707, tls: true, tfo: false, skip-cert-verify: true, servername: easynet23.mfrpb.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: easynet23.mfrpb.workers.dev}}, udp: true}
-  - {name: 🌏 CF-3, server: 141.101.113.178, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-30, server: uciranir-uciranir-uiranir-uciranir-uciranir-uciranir-uciranir2.kehib41931.workers.dev, port: 443, type: vless, uuid: c3c20db7-d32b-454a-9843-ec22d064a842, tls: true, tfo: false, skip-cert-verify: true, servername: uciranir-uciranir-uiranir-uciranir-uciranir-uciranir-uciranir2.kehib41931.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR/, headers: {Host: uciranir-uciranir-uiranir-uciranir-uciranir-uciranir-uciranir2.kehib41931.workers.dev}}, udp: true}
-  - {name: 🌏 CF-4, server: 173.245.49.242, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: ax.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: ax.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-5, server: 188.114.99.13, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-6, server: 198.41.203.18, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-7, server: 198.41.194.31, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-8, server: 198.41.206.230, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
-  - {name: 🌏 CF-9, server: 172.66.44.137, port: 2053, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: BpB-v.PAgEs.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram#V2ray_Alpha/=?ed=2560", headers: {Host: BpB-v.PAgEs.Dev}}, udp: true}
+  - {name: 🇸🇬 SG-1, server: jiedianfsc.fsc.interld123456789.com, port: 20000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-10, server: jiedianfsc.fsc.interld123456789.com, port: 24000, type: hysteria2, password: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, auth: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, sni: 234224.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-11, server: sg-02.cloudlion.me, port: 8005, type: hysteria2, password: 9a601d59-4941-45e3-a863-c040737f2b25, auth: 9a601d59-4941-45e3-a863-c040737f2b25, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-12, server: jiedianfsc.fsc.interld123456789.com, port: 26000, type: hysteria2, password: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, auth: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, sni: 234224.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-2, server: jiedianfsc.fsc.interld123456789.com, port: 22000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-3, server: jiedianfsc.fsc.interld123456789.com, port: 26000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: 234224.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-4, server: jiedianfsc.fsc.interld123456789.com, port: 24000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: 234224.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-5, server: 52.77.19.190, port: 443, type: vless, uuid: 20fda433-1864-433b-b3dd-8f119fe4cafd, tls: true, tfo: false, skip-cert-verify: true, servername: happy.mianfeicf.lol, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: happy.mianfeicf.lol}}, udp: true}
+  - {name: 🇸🇬 SG-6, server: 206.238.237.47, port: 2053, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@Linkvws?ed=2048", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇸🇬 SG-7, server: 206.238.237.182, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: dw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /blue, headers: {Host: dw.ylks.xyz}}, udp: true}
+  - {name: 🇸🇬 SG-8, server: jiedianfsc.fsc.interld123456789.com, port: 22000, type: hysteria2, password: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, auth: b3b5f0b9-31a5-4868-8f86-8b4ea22ee781, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 SG-9, server: sg-02.cloudlion.me, port: 8005, type: hysteria2, password: 1947e8a2-f868-4ef5-8024-21c9dfa27450, auth: 1947e8a2-f868-4ef5-8024-21c9dfa27450, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-1, server: 154.17.25.25, port: 15248, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇺🇸 US-10, server: 167.68.11.100, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: true, servername: cfed.tgzdyz2.top, client-fingerprint: chrome, network: ws, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, udp: true}
+  - {name: 🇺🇸 US-11, server: 155.46.213.37, port: 443, type: vless, uuid: 2cd6ed0f-636e-4e6c-9449-5a263d7a0fa5, tls: true, tfo: false, skip-cert-verify: true, servername: cfed.tgzdyz2.top, client-fingerprint: chrome, network: ws, ws-opts: {path: tg@zdyz2, headers: {Host: cfed.tgzdyz2.top}}, udp: true}
+  - {name: 🇺🇸 US-12, server: 192.0.54.172, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.ylks.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: lw.ylks.us.kg}}, udp: true}
+  - {name: 🇺🇸 US-13, server: 167.68.11.146, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
+  - {name: 🇺🇸 US-14, server: 199.34.228.179, port: 443, type: vless, uuid: cc3a15eb-0a63-486c-8e12-c7be717ebcd4, tls: true, tfo: false, skip-cert-verify: true, servername: bpB005.paGeS.DEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/1bd7yey9071nu9bu/mtuyljy3ljiznc40oq==?ed=2560", headers: {Host: bpB005.paGeS.DEv}}, udp: true}
+  - {name: 🇺🇸 US-15, server: 45.194.53.13, port: 2053, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: SB-1U6.PAgEs.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/fltcxoo6grqvat6v/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: SB-1U6.PAgEs.dev}}, udp: true}
+  - {name: 🇺🇸 US-16, server: 199.34.228.71, port: 2087, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: Sb-1u6.paGEs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: Sb-1u6.paGEs.dEv}}, udp: true}
+  - {name: 🇺🇸 US-17, server: 205.233.181.184, port: 2087, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: Sb-1u6.paGEs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: Sb-1u6.paGEs.dEv}}, udp: true}
+  - {name: 🇺🇸 US-18, server: 103.116.7.67, port: 2083, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@Linkvws?ed=2048", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇺🇸 US-19, server: 198.62.62.110, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: la.ylks01.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: /proxyip=proxyip.us.fxxk.dedyn.io, headers: {Host: la.ylks01.eu.org}}, udp: true}
+  - {name: 🇺🇸 US-2, server: 94.124.119.166, port: 42138, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇺🇸 US-20, server: 208.86.168.45, port: 2083, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: SB-1U6.PAgeS.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/urenftuu3z1kqryb/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: SB-1U6.PAgeS.dEv}}, udp: true}
+  - {name: 🇺🇸 US-21, server: 208.86.168.74, port: 2087, type: vless, uuid: fca01448-d84a-436e-9aec-3be1ebdfb350, tls: true, tfo: false, skip-cert-verify: true, servername: Sb-1u6.paGEs.dEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/pc0cypuups4meoks/mtu4ljewms4ymdmumti3?ed=2560", headers: {Host: Sb-1u6.paGEs.dEv}}, udp: true}
+  - {name: 🇺🇸 US-22, server: 185.148.105.225, port: 8443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
+  - {name: 🇺🇸 US-23, server: 45.76.0.86, port: 443, type: hysteria2, password: 1f17cdf0578a2860, auth: 1f17cdf0578a2860, sni: 45.76.0.86, skip-cert-verify: true, obfs: salamander, obfs-password: 4b817757, udp: true}
+  - {name: 🇺🇸 US-24, server: 207.148.22.93, port: 443, type: hysteria2, password: 9bb452b106ffc217, auth: 9bb452b106ffc217, skip-cert-verify: true, obfs: salamander, obfs-password: cd29099d, udp: true}
+  - {name: 🇺🇸 US-25, server: 207.148.22.93, port: 443, type: hysteria2, password: 9bb452b106ffc217, auth: 9bb452b106ffc217, sni: 207.148.22.93, skip-cert-verify: true, obfs: salamander, obfs-password: cd29099d, udp: true}
+  - {name: 🇺🇸 US-26, server: 207.148.22.93, port: 443, type: hysteria2, password: 9bb452b106ffc217, auth: 9bb452b106ffc217, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, obfs: salamander, obfs-password: cd29099d, udp: true}
+  - {name: 🇺🇸 US-27, server: 108.181.24.39, port: 60714, type: hysteria2, password: dongtaiwang.com, auth: dongtaiwang.com, sni: www.bing.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-28, server: 199.181.197.143, port: 443, type: trojan, password: bpb-trojan, sni: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV, skip-cert-verify: true, network: ws, ws-opts: {path: "/trAun92tJzhYilmLtq?ed=2560", headers: {Host: 403B3611-99bc-43b7-88D7-26eD5d0825A9-3.PaGeS.deV}}, udp: true}
+  - {name: 🇺🇸 US-29, server: 172.111.36.108, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US-3, server: 38.59.224.55, port: 50406, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇺🇸 US-4, server: 154.9.248.216, port: 443, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇺🇸 US-5, server: jiedianfsc.fsc.interld123456789.com, port: 28002, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-6, server: jiedianfsc.fsc.interld123456789.com, port: 28000, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-7, server: jiedianfsc.fsc.interld123456789.com, port: 28001, type: hysteria2, password: 3487079b-1f53-44fc-b685-75f9ea796844, auth: 3487079b-1f53-44fc-b685-75f9ea796844, sni: cesuuu.1234567890spcloud.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-8, server: 103.170.72.238, port: 27053, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🇺🇸 US-9, server: 103.116.7.230, port: 443, type: vless, uuid: 0d89a36e-36bc-41d2-8bd3-bbd639991f29, tls: true, tfo: false, skip-cert-verify: true, servername: nicorobin.eula.cloudns.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048&Telegram🇨🇳 @WangCai2", headers: {Host: nicorobin.eula.cloudns.org}}, udp: true}
+  - {name: 🌏 CF-1, server: 104.18.93.27, port: 443, type: vless, uuid: 0d836bdb-adbc-4863-8c56-dc662e7f6919, tls: true, tfo: false, skip-cert-verify: true, servername: mahdiv2.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: mahdiv2.pages.dev}}, udp: true}
+  - {name: 🌏 CF-10, server: 104.16.190.131, port: 8443, type: vless, uuid: 9d5e7586-64e1-4c29-9d47-6cbbd57fe8d1, tls: true, tfo: false, skip-cert-verify: true, servername: pardazeshvpn-tg48.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: pardazeshvpn-tg48.pages.dev}}, udp: true}
+  - {name: 🌏 CF-11, server: 188.114.98.10, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
+  - {name: 🌏 CF-12, server: 190.93.244.18, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
+  - {name: 🌏 CF-13, server: 188.114.97.198, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
+  - {name: 🌏 CF-14, server: 188.114.98.24, port: 2053, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: bPb-v.PageS.DEV, client-fingerprint: chrome, network: ws, ws-opts: {path: /R2lncvPJWZWjt7Oi/MTI5LjE1OS4yNDEuMTcy, headers: {Host: bPb-v.PageS.DEV}}, udp: true}
+  - {name: 🌏 CF-15, server: 162.159.153.2, port: 443, type: vless, uuid: d3a12e79-ef42-4268-b367-42eeb3494e60, tls: true, tfo: false, skip-cert-verify: true, servername: Hagh.PaGes.DEv, client-fingerprint: chrome, network: ws, ws-opts: {path: "/PathTELEGRAM-@vpnAndroid2/?ed=2048", headers: {Host: Hagh.PaGes.DEv}}, udp: true}
+  - {name: 🌏 CF-16, server: 198.41.203.245, port: 443, type: vless, uuid: a13df940-020c-465f-bc89-ee5279b5cd6a, tls: true, tfo: false, skip-cert-verify: true, servername: lw.kpcloud.eu.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: lw.kpcloud.eu.org}}, udp: true}
+  - {name: 🌏 CF-17, server: 172.67.180.15, port: 443, type: vless, uuid: 3c95c3eb-522a-46a0-a49a-14e10c03fbf8, tls: true, tfo: false, skip-cert-verify: true, servername: paHlAvi.pAGEs.DeV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram-@V2ray_Alpha/?ed=2560", headers: {Host: paHlAvi.pAGEs.DeV}}, udp: true}
+  - {name: 🌏 CF-18, server: 104.16.61.8, port: 2083, type: vless, uuid: c46a54bf-b220-4c22-cd6e-fb1fcabda0af, tls: true, tfo: false, skip-cert-verify: true, servername: cpanel3.sassanidempire.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: cpanel3.sassanidempire.com}}, udp: true}
+  - {name: 🌏 CF-19, server: 104.18.77.36, port: 443, type: vless, uuid: f775978b-6e22-41a8-ae5e-5f9779e6745f, tls: true, tfo: false, skip-cert-verify: true, servername: juzibaipiao.5112233.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: juzibaipiao.5112233.xyz}}, udp: true}
+  - {name: 🌏 CF-2, server: 104.25.5.222, port: 443, type: vless, uuid: 18cb1e84-aec2-44b3-aadd-5d040f47a842, tls: true, tfo: false, skip-cert-verify: true, servername: pardazeshvpn-tg44.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /@VPNHTTPInjectorfree, headers: {Host: pardazeshvpn-tg44.pages.dev}}, udp: true}
+  - {name: 🌏 CF-20, server: www.visa.com.sg, port: 8443, type: vless, uuid: 90eaea04-aabe-41ea-829d-9ece062e9d6a, tls: true, tfo: false, skip-cert-verify: true, servername: pardazeshvpn-tg69.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN-Telegram:@PARDAZESHVPN?ed=2048", headers: {Host: pardazeshvpn-tg69.pages.dev}}, udp: true}
+  - {name: 🌏 CF-21, server: 104.18.35.86, port: 443, type: vless, uuid: 43f8f2c7-59fd-4ab4-b7dd-c52f0f0da18f, tls: true, tfo: false, skip-cert-verify: true, servername: BuGfrEEnet-sattAr.PAGes.DEV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/bmvpiqrOHtbFAnVM?ed=2560", headers: {Host: BuGfrEEnet-sattAr.PAGes.DEV}}, udp: true}
+  - {name: 🌏 CF-22, server: 104.18.39.232, port: 2083, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: ArGodev11222.PaGes.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram-------V2rayi_net_-_-_-_-Telegram-------V2rayi_net/?ed=2560", headers: {Host: ArGodev11222.PaGes.Dev}}, udp: true}
+  - {name: 🌏 CF-23, server: besar.homes, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws, headers: {Host: besar.homes}}, udp: true}
+  - {name: 🌏 CF-24, server: e.usaha.homes, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: e.usaha.homes, network: ws, ws-opts: {path: linkvws, headers: {Host: e.usaha.homes}}, udp: true}
+  - {name: 🌏 CF-25, server: bpb-worker-panel1-e4p.pages.dev, port: 443, type: vless, uuid: 4045e84e-5e3c-4f70-8ff5-c1097882a55a, tls: true, tfo: false, skip-cert-verify: true, servername: bpb-wOrkeR-PANEl1-E4P.PaGeS.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /Telegram@V2ray_Alpha/, headers: {Host: bpb-worker-panel1-e4p.pages.dev}}, udp: true}
+  - {name: 🌏 CF-26, server: lw.ylks.xyz, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: lw.YLKs.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/meg4aiw4ewyk7829?ed=2560", headers: {Host: lw.ylks.xyz}}, udp: true}
+  - {name: 🌏 CF-27, server: 104.21.7.50, port: 443, type: trojan, password: bpb-trojan, sni: 403b3611-99bc-43B7-88d7-26ED5d0825A9-3.PagEs.deV, skip-cert-verify: true, network: ws, ws-opts: {path: "/treXr2VnQe0fT2hPwW?ed=2560", headers: {Host: 403b3611-99bc-43B7-88d7-26ED5d0825A9-3.PagEs.deV}}, udp: true}
+  - {name: 🌏 CF-28, server: ddd.zcr07.uS.KG, port: 443, type: vmess, uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linde06.indiavideo.sbs:443/linkws, headers: {Host: ddd.zcr07.uS.KG}}, udp: true}
+  - {name: 🌏 CF-29, server: 104.20.19.168, port: 2083, type: trojan, password: auto, sni: e9464f45.trauma-2r4.pages.dev, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: e9464f45.trauma-2r4.pages.dev}}, udp: true}
+  - {name: 🌏 CF-3, server: 172.66.44.101, port: 443, type: vless, uuid: 34a83286-ba4e-4f0a-ac08-77a95469eeaf, tls: true, tfo: false, skip-cert-verify: true, servername: pardazesh18.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/Telegram@Linkvws?ed=2048", headers: {Host: pardazesh18.pages.dev}}, udp: true}
+  - {name: 🌏 CF-30, server: 104.17.215.2, port: 443, type: trojan, password: 669d0ac7b5b64ebbb1abb75d5d540a5c, sni: jobscareerforstudent.com, skip-cert-verify: true, network: ws, ws-opts: {path: 6b777a91, headers: {Host: jobscareerforstudent.com}}, udp: true}
+  - {name: 🌏 CF-31, server: ppal03.mohammad-senger.workers.dev, port: 443, type: vless, uuid: c4b6ad48-db4a-4348-8e4a-e6a64a863c7d, tls: true, tfo: false, skip-cert-verify: true, servername: PpaL03.mOHammAD-sEnGER.WoRKeRS.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/60DQVhzRgjIp-tWO?ed=2048", headers: {Host: ppal03.mohammad-senger.workers.dev}}, udp: true}
+  - {name: 🌏 CF-32, server: white.bitiboot.com, port: 443, type: vless, uuid: b882be34-d731-421f-8c8f-f818d475075c, tls: true, tfo: false, skip-cert-verify: true, servername: white.bitiboot.com, client-fingerprint: chrome, network: ws, ws-opts: {path: /white, headers: {Host: white.bitiboot.com}}, udp: true}
+  - {name: 🌏 CF-33, server: freedom7.haner40160.workers.dev, port: 443, type: vless, uuid: 0b0b8f0b-4b9e-4965-8e02-3ce8fa02ac55, tls: true, tfo: false, skip-cert-verify: true, servername: freedom7.haner40160.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: freedom7.haner40160.workers.dev}}, udp: true}
+  - {name: 🌏 CF-34, server: hello-world-empty-feather-0943.sitosa5105.workers.dev, port: 443, type: vless, uuid: 5d8b1149-8f78-4154-a647-16563ec99c8a, tls: true, tfo: false, skip-cert-verify: true, servername: hello-world-empty-feather-0943.sitosa5105.workers.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /, headers: {Host: hello-world-empty-feather-0943.sitosa5105.workers.dev}}, udp: true}
+  - {name: 🌏 CF-35, server: 198.41.220.20, port: 443, type: trojan, password: e8105dfd24414268b6c7652c63731097, sni: avianrecruit.com, skip-cert-verify: true, network: ws, ws-opts: {path: 6b777a91, headers: {Host: avianrecruit.com}}, udp: true}
+  - {name: 🌏 CF-36, server: bypassfilter.cmyyvat.workers.dev, port: 443, type: vless, uuid: b0e6a2c9-e667-4e42-9cb3-77d7db3e736b, tls: true, tfo: false, skip-cert-verify: true, servername: bypassfilter.cmyyvat.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: /@bypass_filter/, headers: {Host: bypassfilter.cmyyvat.workers.dev}}, udp: true}
+  - {name: 🌏 CF-37, server: uciranir-uciranir-uiranir-uciranir-uciranir-uciranir-uciranir1.detixi1932.workers.dev, port: 443, type: vless, uuid: 33818a00-cbdb-4ae0-a31a-e7de094e7aec, tls: true, tfo: false, skip-cert-verify: true, servername: uciranir-uciranir-uiranir-uciranir-uciranir-uciranir-uciranir1.detixi1932.workers.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/-@UCIRANIR-@UCIRANIR-@UCIRANIR-@UCIRANIR/?ed=2047", headers: {Host: uciranir-uciranir-uiranir-uciranir-uciranir-uciranir-uciranir1.detixi1932.workers.dev}}, udp: true}
+  - {name: 🌏 CF-4, server: 104.21.59.145, port: 443, type: vless, uuid: 468d811a-8540-4517-9779-0f542b5150d2, tls: true, tfo: false, skip-cert-verify: true, servername: PPal03.luCIEN-isAak.WOrkeRS.dEV, client-fingerprint: chrome, network: ws, ws-opts: {path: "/je0xBlZdnSJJ7NFf?ed=2560", headers: {Host: PPal03.luCIEN-isAak.WOrkeRS.dEV}}, udp: true}
+  - {name: 🌏 CF-5, server: 141.101.122.99, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
+  - {name: 🌏 CF-6, server: 198.41.206.230, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
+  - {name: 🌏 CF-7, server: 198.41.195.54, port: 443, type: vless, uuid: 48198295-b7ba-4b5c-8d85-085d55a6c869, tls: true, tfo: false, skip-cert-verify: true, servername: aw.ylks.xyz, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: aw.ylks.xyz}}, udp: true}
+  - {name: 🌏 CF-8, server: 104.16.79.146, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: 20Fb0424.bpB-wORKer-PAnEl-1xd.pages.deV, client-fingerprint: chrome, network: ws, ws-opts: {path: "Telegram-------PROXY_MTM-_-_-_-Telegram-------PROXY_MTM/?ed=2048", headers: {Host: 20Fb0424.bpB-wORKer-PAnEl-1xd.pages.deV}}, udp: true}
+  - {name: 🌏 CF-9, server: 172.66.44.167, port: 8443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: JoInMahDISeRver-bg3.PAGes.Dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/F9DVuhwdBN6mSnuE?ed=2560", headers: {Host: JoInMahDISeRver-bg3.PAGes.Dev}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -174,6 +163,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -205,6 +198,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -216,51 +216,40 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -279,6 +268,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -310,6 +303,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -322,51 +322,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -385,6 +374,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -416,6 +409,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -440,51 +440,40 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -503,6 +492,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -534,6 +527,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -550,51 +550,40 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -613,6 +602,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -644,6 +637,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -655,51 +655,40 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -718,6 +707,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -749,6 +742,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -761,51 +761,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -824,6 +813,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -855,6 +848,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
@@ -876,51 +876,40 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - AE-1
-      - BR-1
-      - BR-2
       - CH-1
-      - FI-1
-      - IT-1
-      - LT-1
-      - LT-2
-      - LT-3
-      - LV-1
-      - RS-1
-      - SE-1
+      - EE-1
+      - KZ-1
       - Un-1
+      - Un-10
+      - Un-11
       - Un-2
       - Un-3
       - Un-4
       - Un-5
-      - 🇦🇺 AU-1
+      - Un-6
+      - Un-7
+      - Un-8
+      - Un-9
       - 🇨🇦 CA-1
-      - 🇨🇦 CA-2
-      - 🇨🇦 CA-3
-      - 🇨🇳 TW-1
-      - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
       - 🇫🇷 FR-1
       - 🇬🇧 GB-1
-      - 🇭🇰 HK-1
-      - 🇭🇰 HK-2
-      - 🇮🇳 IN-1
-      - 🇯🇵 JP-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
       - 🇰🇷 KR-1
       - 🇰🇷 KR-2
-      - 🇰🇷 KR-3
-      - 🇰🇷 KR-4
-      - 🇳🇱 NL-1
-      - 🇳🇱 NL-2
       - 🇷🇺 RU-1
-      - 🇷🇺 RU-2
-      - 🇷🇺 RU-3
-      - 🇷🇺 RU-4
       - 🇸🇬 SG-1
+      - 🇸🇬 SG-10
+      - 🇸🇬 SG-11
+      - 🇸🇬 SG-12
       - 🇸🇬 SG-2
       - 🇸🇬 SG-3
       - 🇸🇬 SG-4
       - 🇸🇬 SG-5
+      - 🇸🇬 SG-6
+      - 🇸🇬 SG-7
+      - 🇸🇬 SG-8
+      - 🇸🇬 SG-9
       - 🇺🇸 US-1
       - 🇺🇸 US-10
       - 🇺🇸 US-11
@@ -939,6 +928,10 @@ proxy-groups:
       - 🇺🇸 US-23
       - 🇺🇸 US-24
       - 🇺🇸 US-25
+      - 🇺🇸 US-26
+      - 🇺🇸 US-27
+      - 🇺🇸 US-28
+      - 🇺🇸 US-29
       - 🇺🇸 US-3
       - 🇺🇸 US-4
       - 🇺🇸 US-5
@@ -970,6 +963,13 @@ proxy-groups:
       - 🌏 CF-29
       - 🌏 CF-3
       - 🌏 CF-30
+      - 🌏 CF-31
+      - 🌏 CF-32
+      - 🌏 CF-33
+      - 🌏 CF-34
+      - 🌏 CF-35
+      - 🌏 CF-36
+      - 🌏 CF-37
       - 🌏 CF-4
       - 🌏 CF-5
       - 🌏 CF-6
