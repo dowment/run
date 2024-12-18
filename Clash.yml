@@ -5,51 +5,251 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
+  - {name: AE-1, server: 193.123.86.232, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: b295-23ae29-6bh.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: BR-1, server: 185.133.35.119, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vb.bgm2024.us.kg}}, udp: true}
+  - {name: BR-2, server: 172.233.19.143, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 172.233.19.143, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: EE-1, server: 95.164.8.185, port: 8080, type: vless, uuid: 8da3432a-d4da-4f43-801f-342cda5eae9f, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: MKfDEJAAbEk2S49G67c1m49oFc8BLwd-0jgfiygcOFg, short-id: "7554c6ea" }, servername: www.speedtest.net, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: MO-1, server: hy9.hy2yydsapi.top, port: 8080, type: vless, uuid: 5d4ea3ba-13d8-40b6-89d7-f099ad6f7581, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8, short-id: "607e67b1" }, servername: www.python.org, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: ZA-1, server: 160.123.255.145, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🇦🇺 AU-1, server: 172.105.172.209, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 172.105.172.209, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇦🇺 AU-2, server: hy3.hy2yydsapi.top, port: 8080, type: vless, uuid: 5d4ea3ba-13d8-40b6-89d7-f099ad6f7581, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8, short-id: "607e67b1" }, servername: www.python.org, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇦 CA-1, server: 23.162.200.103, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 23.162.200.103, network: ws, ws-opts: {path: linkvws}, udp: true}
   - {name: 🇨🇳 CN-1, server: 156.230.12.71, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇩🇪 DE-1, server: 130.162.227.253, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇳🇱 NL-1, server: 141.144.203.197, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇺🇸 US-1, server: 63.141.128.108, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vc.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vc.bgm2024.us.kg}}, udp: true}
+  - {name: 🇩🇪 DE-1, server: 138.2.177.36, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇩🇪 DE-2, server: 141.144.244.120, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇩🇪 DE-3, server: 132.226.203.64, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇫🇷 FR-1, server: 51.77.20.132, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB-1, server: 172.99.190.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇬🇧 GB-2, server: 149.7.16.188, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: marien.motorcycles, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB-3, server: 217.163.76.104, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🇬🇧 GB-4, server: 149.7.16.33, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: nicoler.lol, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇭🇰 HK-1, server: 18.167.167.110, port: 40091, type: trojan, password: 3e5cb4f5-8dcf-492a-b4c8-06bc06f158bb, sni: hk12.bilibili.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 HK-2, server: 3bd9.55dca.e048.f64-fef1f.yfjcs.com, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: yfhk2.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇮🇳 IN-1, server: 13.126.184.76, port: 1080, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇮🇳 IN-2, server: 65.1.40.47, port: 80, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-1, server: 138.199.23.100, port: 43118, type: trojan, password: ypDt8RkT7J, sni: radtz.phooeyunfold.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 JP-2, server: 131.186.37.192, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vc.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vc.bgm2024.us.kg}}, udp: true}
+  - {name: 🇯🇵 JP-3, server: 141.147.178.76, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇰🇷 KR-1, server: 146.56.150.200, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: b295-23ap29-6bh.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 KR-2, server: h1s.185599.xyz, port: 57463, type: vless, uuid: 1a97e586-36ce-445f-afa9-a29cc683e0bf, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: dTpvz6KPQETymsWKF76zYmxBVwLnWNvEUc2JFTGxDjw, short-id: "b4784fe4" }, servername: objectstorage.ap-seoul-1.oraclecloud.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇰🇷 KR-3, server: h2s.185599.xyz, port: 65047, type: vless, uuid: 1a97e586-36ce-445f-afa9-a29cc683e0bf, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: dTpvz6KPQETymsWKF76zYmxBVwLnWNvEUc2JFTGxDjw, short-id: "b4784fe4" }, servername: objectstorage.ap-seoul-1.oraclecloud.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇳🇱 NL-1, server: 158.101.219.121, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇳🇱 NL-2, server: 185.221.219.229, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 185.221.219.229, network: ws, ws-opts: {path: linkvws}, udp: true}
+  - {name: 🇳🇱 NL-3, server: 158.101.215.156, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇳🇱 NL-4, server: 158.101.209.76, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇺🇸 US-1, server: 38.75.136.73, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US-10, server: 129.213.136.180, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: pvg.aghabeiki.homes, client-fingerprint: chrome, network: ws, ws-opts: {path: "?ed=2744", headers: {Host: pvg.aghabeiki.homes}}, udp: true}
+  - {name: 🇺🇸 US-11, server: sherasheba.com, port: 443, type: trojan, password: 0ab6c98dae3b48e8b9c4a776b6c9c19a, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-12, server: 132.226.114.74, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇺🇸 US-13, server: 104.168.94.114, port: 34237, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇺🇸 US-14, server: 129.153.223.37, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🇺🇸 US-2, server: 185.180.13.70, port: 43118, type: trojan, password: ypDt8RkT7J, sni: earya.phooeyunfold.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-3, server: 23.134.94.50, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vk.com, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US-4, server: 89.187.185.132, port: 43118, type: trojan, password: ypDt8RkT7J, sni: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 US-5, server: 198.62.62.22, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇺🇸 US-6, server: 38.91.106.43, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: vk.com, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US-7, server: 38.91.107.36, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: google.com, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇺🇸 US-8, server: 23.150.248.107, port: 443, type: trojan, password: 71409d3e488548e8bb076d229778f008, sni: jobscareertoday.com, skip-cert-verify: true, network: ws, ws-opts: {path: 6b777a91, headers: {Host: jobscareertoday.com}}, udp: true}
+  - {name: 🇺🇸 US-9, server: 69.50.93.90, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 69.50.93.90, network: ws, ws-opts: {path: /linkvws}, udp: true}
   - {name: 🌏 CF-1, server: visa.cn, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}, udp: true}
-  - {name: 🌏 CF-2, server: 162.159.153.248, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vb.bgm2024.us.kg}}, udp: true}
-  - {name: 🌏 CF-3, server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🌏 CF-10, server: www.iplocation.net, port: 443, type: vless, uuid: 0954c6d7-f4a7-44ff-9a78-1939f9ba43d4, tls: true, tfo: false, skip-cert-verify: true, servername: server20.aibox.tv, client-fingerprint: chrome, network: ws, ws-opts: {path: /TG-AiLuMao/, headers: {Host: server20.aibox.tv}}, udp: true}
+  - {name: 🌏 CF-11, server: 162.159.44.187, port: 443, type: vless, uuid: 49531eb9-e547-43bf-b34a-992d21c05280, tls: true, tfo: false, skip-cert-verify: true, servername: setup10.pages.dev, client-fingerprint: chrome, network: ws, ws-opts: {path: "/setup10.pages.dev/?ed=2560", headers: {Host: setup10.pages.dev}}, udp: true}
+  - {name: 🌏 CF-2, server: visa.cn, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}, udp: true}
+  - {name: 🌏 CF-3, server: 104.21.9.137, port: 443, type: vless, uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8, tls: true, tfo: false, skip-cert-verify: true, servername: de.bolagskontaktstockholm.se, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: de.bolagskontaktstockholm.se}}, udp: true}
+  - {name: 🌏 CF-4, server: visa.cn, port: 443, type: vless, uuid: 0954c6d7-f4a7-44ff-9a78-1939f9ba43d4, tls: true, tfo: false, skip-cert-verify: true, servername: server20.aibox.tv, client-fingerprint: chrome, network: ws, ws-opts: {path: /TG-AiLuMao/, headers: {Host: server20.aibox.tv}}, udp: true}
+  - {name: 🌏 CF-5, server: c2-4.bujidao.org, port: 2083, type: vless, uuid: 1ccc1dd8-d8ed-4b69-b0c2-27f6282f9755, tls: true, tfo: false, skip-cert-verify: true, servername: test.bujidao.org, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: test.bujidao.org}}, udp: true}
+  - {name: 🌏 CF-6, server: join.my.telegram.channel.cmliussss.to.unlock.more.premium.nodes.cf.090227.xyz, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🌏 CF-7, server: 162.159.152.63, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🌏 CF-8, server: 162.159.152.29, port: 443, type: vless, uuid: ba50e392-753a-4828-a7b8-d72ce226fa6a, tls: true, tfo: false, skip-cert-verify: true, servername: ta.vmy2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: ta.vmy2024.us.kg}}, udp: true}
+  - {name: 🌏 CF-9, server: sgfqkqmltcy.site, port: 443, type: vmess, uuid: d13fc2f5-3e05-4795-81eb-44143a09e552, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /rbqqvws, headers: {Host: sgfqkqmltcy.site}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -68,13 +268,63 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -85,38 +335,188 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -132,13 +532,63 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
+      - AE-1
+      - BR-1
+      - BR-2
+      - EE-1
+      - MO-1
+      - ZA-1
+      - 🇦🇺 AU-1
+      - 🇦🇺 AU-2
+      - 🇨🇦 CA-1
       - 🇨🇳 CN-1
       - 🇩🇪 DE-1
+      - 🇩🇪 DE-2
+      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
+      - 🇬🇧 GB-1
+      - 🇬🇧 GB-2
+      - 🇬🇧 GB-3
+      - 🇬🇧 GB-4
+      - 🇭🇰 HK-1
+      - 🇭🇰 HK-2
+      - 🇮🇳 IN-1
+      - 🇮🇳 IN-2
+      - 🇯🇵 JP-1
+      - 🇯🇵 JP-2
+      - 🇯🇵 JP-3
+      - 🇰🇷 KR-1
+      - 🇰🇷 KR-2
+      - 🇰🇷 KR-3
       - 🇳🇱 NL-1
+      - 🇳🇱 NL-2
+      - 🇳🇱 NL-3
+      - 🇳🇱 NL-4
       - 🇺🇸 US-1
+      - 🇺🇸 US-10
+      - 🇺🇸 US-11
+      - 🇺🇸 US-12
+      - 🇺🇸 US-13
+      - 🇺🇸 US-14
+      - 🇺🇸 US-2
+      - 🇺🇸 US-3
+      - 🇺🇸 US-4
+      - 🇺🇸 US-5
+      - 🇺🇸 US-6
+      - 🇺🇸 US-7
+      - 🇺🇸 US-8
+      - 🇺🇸 US-9
       - 🌏 CF-1
+      - 🌏 CF-10
+      - 🌏 CF-11
       - 🌏 CF-2
       - 🌏 CF-3
+      - 🌏 CF-4
+      - 🌏 CF-5
+      - 🌏 CF-6
+      - 🌏 CF-7
+      - 🌏 CF-8
+      - 🌏 CF-9
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
