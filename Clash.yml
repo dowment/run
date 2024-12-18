@@ -5,99 +5,103 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: SE-1, server: 13.50.54.181, port: 22222, type: trojan, password: telegram-id-privatevpns, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
+  - {name: MO-1, server: hy9.hy2yydsapi.top, port: 8080, type: vless, uuid: 5d4ea3ba-13d8-40b6-89d7-f099ad6f7581, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8, short-id: "607e67b1" }, servername: www.python.org, client-fingerprint: chrome, network: tcp, udp: true}
   - {name: 🇨🇳 CN-1, server: 156.230.12.71, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
   - {name: 🇨🇳 CN-2, server: 156.230.12.71, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇩🇪 DE-1, server: 150.230.147.10, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: 767w1-85dc0-9ocf2.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 DE-2, server: 141.147.33.180, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: 767w1-85dc0-9yjd.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
-  - {name: 🇩🇪 DE-3, server: 141.144.253.65, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇬🇧 GB-1, server: 152.67.154.191, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇬🇧 GB-2, server: 130.162.162.62, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇬🇧 GB-3, server: 149.7.16.174, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇬🇧 GB-4, server: 141.147.87.47, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇰🇷 KR-1, server: 140.238.23.148, port: 443, type: vless, uuid: 89b3cbba-e6ac-485a-9481-976a0415eab9, tls: true, tfo: false, skip-cert-verify: true, servername: pvg.aghabeiki.homes, client-fingerprint: chrome, network: ws, ws-opts: {path: "?ed=2744", headers: {Host: pvg.aghabeiki.homes}}, udp: true}
-  - {name: 🇳🇱 NL-1, server: 152.70.52.154, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇺🇸 US-1, server: 69.50.93.90, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /linkvws}, udp: true}
-  - {name: 🇺🇸 US-2, server: 160.79.104.82, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
-  - {name: 🇺🇸 US-3, server: 155.248.213.85, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: 767w1-45dc0-9ocf2.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇨🇳 TW-1, server: hy6.hy2yydsapi.top, port: 8080, type: vless, uuid: 5d4ea3ba-13d8-40b6-89d7-f099ad6f7581, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, reality-opts: {public-key: n7YGTRf8PzsFzQLsfPTAatsrd9Ws50ETDTKUG6p8nx8, short-id: "607e67b1" }, servername: www.python.org, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇩🇪 DE-1, server: 129.159.28.59, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇫🇷 FR-1, server: 89.168.37.109, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: downloadfr.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇬🇧 GB-1, server: 149.7.16.188, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 149.7.16.188, network: ws, ws-opts: {path: /linkvws}, udp: true}
+  - {name: 🇬🇧 GB-2, server: 132.226.211.23, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇬🇧 GB-3, server: 152.67.130.24, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇬🇧 GB-4, server: 130.162.162.62, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇬🇧 GB-5, server: 13.40.239.130, port: 3128, type: http, tls: true, skip-cert-verify: true, udp: true}
+  - {name: 🇬🇧 GB-6, server: 150.230.126.228, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇭🇰 HK-1, server: 3bd9.55dca.e048.f61-fef1f.yfjcs.com, port: 443, type: vless, uuid: e1ed31a0-433a-4572-a7c8-5281d02e4847, tls: true, tfo: false, flow: xtls-rprx-vision, skip-cert-verify: true, servername: yfhk1.xn--4gq62f52gppi29k.com, client-fingerprint: chrome, network: tcp, udp: true}
+  - {name: 🇯🇵 JP-1, server: 138.199.23.100, port: 43118, type: trojan, password: ypDt8RkT7J, sni: radtz.phooeyunfold.com, skip-cert-verify: true, udp: true}
+  - {name: 🇰🇷 KR-1, server: 144.24.77.24, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇳🇱 NL-1, server: 143.47.178.110, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
+  - {name: 🇳🇱 NL-2, server: 158.101.209.76, port: 443, type: vless, uuid: 531bf100-1477-487c-a979-6adebf8f105f, tls: true, tfo: false, skip-cert-verify: true, servername: vdb.bgm2024.us.kg, client-fingerprint: chrome, network: ws, ws-opts: {path: "/?ed=2560", headers: {Host: vdb.bgm2024.us.kg}}, udp: true}
   - {name: 🌏 CF-1, server: visa.cn, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}, udp: true}
-  - {name: 🌏 CF-2, server: 104.21.9.137, port: 443, type: vless, uuid: 1aae9657-c653-495d-e8ad-8ca52916cea8, tls: true, tfo: false, skip-cert-verify: true, servername: de.bolagskontaktstockholm.se, client-fingerprint: chrome, network: ws, ws-opts: {path: /ws, headers: {Host: de.bolagskontaktstockholm.se}}, udp: true}
-  - {name: 🌏 CF-3, server: cdncdncdn.aikunapp.com, port: 443, type: vmess, uuid: 96cad374-7573-4463-8804-4665c2c3d932, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: r-2aVFLUYfwnYDg2P6.sm-node.com, network: ws, ws-opts: {path: "/vmess_ws/smjc/index?ed=8192", headers: {Host: cdn-us.sm-node.com}}, udp: true}
-  - {name: 🌏 CF-4, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-B8wYPos4ymYQOPCb.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
+  - {name: 🌏 CF-2, server: visa.cn, port: 443, type: trojan, password: bpb-trojan, sni: zamim340.ggff.net, skip-cert-verify: true, network: ws, ws-opts: {path: "/tr?ed=2560", headers: {Host: zamim340.ggff.net}}, udp: true}
+  - {name: 🌏 CF-3, server: cdncdncdn.aikunapp.com, port: 443, type: vless, uuid: 96cad374-7573-4463-8804-4665c2c3d932, tls: true, tfo: false, skip-cert-verify: true, servername: r-dDm5lhJYtS8bwLJk.sm-node.com, client-fingerprint: chrome, network: ws, ws-opts: {path: "/vless_ws/smjc/index?ed=8192", headers: {Host: cdn-ca.sm-node.com}}, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -116,25 +120,26 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -145,74 +150,77 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -228,25 +236,26 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - SE-1
+      - MO-1
       - 🇨🇳 CN-1
       - 🇨🇳 CN-2
+      - 🇨🇳 TW-1
       - 🇩🇪 DE-1
-      - 🇩🇪 DE-2
-      - 🇩🇪 DE-3
+      - 🇫🇷 FR-1
       - 🇬🇧 GB-1
       - 🇬🇧 GB-2
       - 🇬🇧 GB-3
       - 🇬🇧 GB-4
+      - 🇬🇧 GB-5
+      - 🇬🇧 GB-6
+      - 🇭🇰 HK-1
+      - 🇯🇵 JP-1
       - 🇰🇷 KR-1
       - 🇳🇱 NL-1
-      - 🇺🇸 US-1
-      - 🇺🇸 US-2
-      - 🇺🇸 US-3
+      - 🇳🇱 NL-2
       - 🌏 CF-1
       - 🌏 CF-2
       - 🌏 CF-3
-      - 🌏 CF-4
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
